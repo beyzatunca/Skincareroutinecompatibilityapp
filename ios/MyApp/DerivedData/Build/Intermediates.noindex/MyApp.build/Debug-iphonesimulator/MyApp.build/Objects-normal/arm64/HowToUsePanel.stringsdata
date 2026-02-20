@@ -1,0 +1,16 @@
+{
+  "source": "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/ProductDetail/Components/HowToUsePanel.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "How to Use",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 14
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,30 @@
+"/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Products/Components/CategoryChip.swift":
+  object: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/CategoryChip.o"
+  dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/CategoryChip.d"
+  diagnostics: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/CategoryChip.dia"
+  const-values: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/CategoryChip.swiftconstvalues"
+  swift-dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/CategoryChip.swiftdeps"
+"/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Products/Components/PersonalizedInfoCard.swift":
+  diagnostics: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/PersonalizedInfoCard.dia"
+  dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/PersonalizedInfoCard.d"
+  swift-dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/PersonalizedInfoCard.swiftdeps"
+  const-values: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/PersonalizedInfoCard.swiftconstvalues"
+  object: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/PersonalizedInfoCard.o"
+"/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Products/Components/SearchBar.swift":
+  swift-dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SearchBar.swiftdeps"
+  object: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SearchBar.o"
+  diagnostics: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SearchBar.dia"
+  dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SearchBar.d"
+  const-values: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SearchBar.swiftconstvalues"
+"/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Products/Components/ProductsTopBar.swift":
+  diagnostics: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/ProductsTopBar.dia"
+  dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/ProductsTopBar.d"
+  swift-dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/ProductsTopBar.swiftdeps"
+  object: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/ProductsTopBar.o"
+  const-values: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/ProductsTopBar.swiftconstvalues"
+"/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Products/Components/ActionCard.swift":
+  const-values: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/ActionCard.swiftconstvalues"
+  diagnostics: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/ActionCard.dia"
+  swift-dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/ActionCard.swiftdeps"
+  dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/ActionCard.d"
+  object: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/ActionCard.o"

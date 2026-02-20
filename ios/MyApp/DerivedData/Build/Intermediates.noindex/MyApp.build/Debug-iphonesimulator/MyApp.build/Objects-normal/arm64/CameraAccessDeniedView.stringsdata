@@ -1,0 +1,40 @@
+{
+  "source": "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Scan/CameraAccessDeniedView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Camera Access Denied",
+        "location": {
+          "startingColumn": 14,
+          "startingLine": 44
+        }
+      },
+      {
+        "comment": "",
+        "key": "Please allow camera access in your browser settings\nto scan product barcodes.",
+        "location": {
+          "startingColumn": 14,
+          "startingLine": 52
+        }
+      },
+      {
+        "comment": "",
+        "key": "Search Products Instead",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 62
+        }
+      },
+      {
+        "comment": "",
+        "key": "Go Back",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 75
+        }
+      }
+    ]
+  },
+  "version": 1
+}

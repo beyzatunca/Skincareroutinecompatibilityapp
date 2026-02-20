@@ -1,0 +1,16 @@
+{
+  "source": "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Products/Components/PersonalizedInfoCard.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Personalized for You",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 12
+        }
+      }
+    ]
+  },
+  "version": 1
+}

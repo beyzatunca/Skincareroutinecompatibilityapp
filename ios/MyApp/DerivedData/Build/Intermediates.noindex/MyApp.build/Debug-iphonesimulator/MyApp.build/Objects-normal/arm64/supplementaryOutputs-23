@@ -1,0 +1,24 @@
+"/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/AI/SkincareCoachView.swift":
+  dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SkincareCoachView.d"
+  diagnostics: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SkincareCoachView.dia"
+  object: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SkincareCoachView.o"
+  const-values: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SkincareCoachView.swiftconstvalues"
+  swift-dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SkincareCoachView.swiftdeps"
+"/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Routine/Components/SegmentedPillSelector.swift":
+  object: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SegmentedPillSelector.o"
+  const-values: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SegmentedPillSelector.swiftconstvalues"
+  dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SegmentedPillSelector.d"
+  swift-dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SegmentedPillSelector.swiftdeps"
+  diagnostics: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SegmentedPillSelector.dia"
+"/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Routine/Components/SelectableListRow.swift":
+  swift-dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SelectableListRow.swiftdeps"
+  diagnostics: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SelectableListRow.dia"
+  object: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SelectableListRow.o"
+  const-values: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SelectableListRow.swiftconstvalues"
+  dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SelectableListRow.d"
+"/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Routine/AddToRoutineSheetView.swift":
+  dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/AddToRoutineSheetView.d"
+  object: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/AddToRoutineSheetView.o"
+  swift-dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/AddToRoutineSheetView.swiftdeps"
+  diagnostics: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/AddToRoutineSheetView.dia"
+  const-values: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/AddToRoutineSheetView.swiftconstvalues"

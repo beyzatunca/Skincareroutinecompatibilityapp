@@ -1,0 +1,16 @@
+{
+  "source": "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Scan/BarcodeScannerView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Scan a barcode",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 44
+        }
+      }
+    ]
+  },
+  "version": 1
+}

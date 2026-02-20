@@ -1,0 +1,16 @@
+{
+  "source": "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Onboarding/OnboardingView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Get Started",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 65
+        }
+      }
+    ]
+  },
+  "version": 1
+}

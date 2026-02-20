@@ -1,0 +1,30 @@
+"/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Survey/Components/SurveyBackButton.swift":
+  object: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SurveyBackButton.o"
+  dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SurveyBackButton.d"
+  swift-dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SurveyBackButton.swiftdeps"
+  diagnostics: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SurveyBackButton.dia"
+  const-values: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SurveyBackButton.swiftconstvalues"
+"/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Survey/Components/SurveyHelperBullets.swift":
+  diagnostics: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SurveyHelperBullets.dia"
+  const-values: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SurveyHelperBullets.swiftconstvalues"
+  dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SurveyHelperBullets.d"
+  object: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SurveyHelperBullets.o"
+  swift-dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SurveyHelperBullets.swiftdeps"
+"/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Models/AppRoute.swift":
+  object: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/AppRoute.o"
+  dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/AppRoute.d"
+  diagnostics: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/AppRoute.dia"
+  const-values: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/AppRoute.swiftconstvalues"
+  swift-dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/AppRoute.swiftdeps"
+"/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Survey/Components/SurveyCheckboxRow.swift":
+  object: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SurveyCheckboxRow.o"
+  const-values: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SurveyCheckboxRow.swiftconstvalues"
+  swift-dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SurveyCheckboxRow.swiftdeps"
+  dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SurveyCheckboxRow.d"
+  diagnostics: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/SurveyCheckboxRow.dia"
+"/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Survey/Components/StickyBottomCTAContainer.swift":
+  diagnostics: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/StickyBottomCTAContainer.dia"
+  dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/StickyBottomCTAContainer.d"
+  swift-dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/StickyBottomCTAContainer.swiftdeps"
+  object: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/StickyBottomCTAContainer.o"
+  const-values: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/StickyBottomCTAContainer.swiftconstvalues"

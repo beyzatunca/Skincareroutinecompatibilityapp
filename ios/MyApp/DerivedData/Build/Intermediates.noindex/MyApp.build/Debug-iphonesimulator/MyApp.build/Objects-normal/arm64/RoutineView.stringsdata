@@ -1,0 +1,24 @@
+{
+  "source": "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Routine/RoutineView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Manage My Products",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 63
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld products in your routine",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 66
+        }
+      }
+    ]
+  },
+  "version": 1
+}

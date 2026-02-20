@@ -1,0 +1,16 @@
+{
+  "source": "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Survey/Components/SurveyBackButton.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Back",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 11
+        }
+      }
+    ]
+  },
+  "version": 1
+}

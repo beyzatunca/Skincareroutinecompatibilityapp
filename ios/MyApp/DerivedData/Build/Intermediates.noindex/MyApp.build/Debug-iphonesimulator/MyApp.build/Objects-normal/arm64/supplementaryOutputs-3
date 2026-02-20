@@ -1,0 +1,30 @@
+"/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Shared/BottomTabBar.swift":
+  object: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/BottomTabBar.o"
+  swift-dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/BottomTabBar.swiftdeps"
+  diagnostics: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/BottomTabBar.dia"
+  const-values: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/BottomTabBar.swiftconstvalues"
+  dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/BottomTabBar.d"
+"/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Home/Components/RoutineCardView.swift":
+  dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/RoutineCardView.d"
+  const-values: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/RoutineCardView.swiftconstvalues"
+  swift-dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/RoutineCardView.swiftdeps"
+  object: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/RoutineCardView.o"
+  diagnostics: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/RoutineCardView.dia"
+"/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Home/Components/HomeActionButton.swift":
+  dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/HomeActionButton.d"
+  diagnostics: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/HomeActionButton.dia"
+  const-values: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/HomeActionButton.swiftconstvalues"
+  swift-dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/HomeActionButton.swiftdeps"
+  object: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/HomeActionButton.o"
+"/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Home/Components/LearnDiscoverCarousel.swift":
+  diagnostics: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/LearnDiscoverCarousel.dia"
+  swift-dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/LearnDiscoverCarousel.swiftdeps"
+  const-values: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/LearnDiscoverCarousel.swiftconstvalues"
+  dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/LearnDiscoverCarousel.d"
+  object: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/LearnDiscoverCarousel.o"
+"/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Placeholders/AddProductsView.swift":
+  dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/AddProductsView.d"
+  object: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/AddProductsView.o"
+  diagnostics: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/AddProductsView.dia"
+  swift-dependencies: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/AddProductsView.swiftdeps"
+  const-values: "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/DerivedData/Build/Intermediates.noindex/MyApp.build/Debug-iphonesimulator/MyApp.build/Objects-normal/arm64/AddProductsView.swiftconstvalues"

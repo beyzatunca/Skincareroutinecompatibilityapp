@@ -1,0 +1,40 @@
+{
+  "source": "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Routine/AddToRoutineSheetView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Add to Routine",
+        "location": {
+          "startingColumn": 14,
+          "startingLine": 31
+        }
+      },
+      {
+        "comment": "",
+        "key": "Time of Day",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 41
+        }
+      },
+      {
+        "comment": "",
+        "key": "Frequency",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 51
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 78
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,16 @@
+{
+  "source": "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/ProductDetail/Components/DetailPanelCard.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Panel content",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 19
+        }
+      }
+    ]
+  },
+  "version": 1
+}

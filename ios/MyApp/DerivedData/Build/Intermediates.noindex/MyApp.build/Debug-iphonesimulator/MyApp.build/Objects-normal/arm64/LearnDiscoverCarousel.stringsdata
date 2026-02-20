@@ -1,0 +1,16 @@
+{
+  "source": "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Home/Components/LearnDiscoverCarousel.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Learn & Discover",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 9
+        }
+      }
+    ]
+  },
+  "version": 1
+}

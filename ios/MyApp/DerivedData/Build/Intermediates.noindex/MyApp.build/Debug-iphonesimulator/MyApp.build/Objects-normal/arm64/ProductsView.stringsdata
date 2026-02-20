@@ -1,0 +1,16 @@
+{
+  "source": "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Products/ProductsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "%lld products found",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 63
+        }
+      }
+    ]
+  },
+  "version": 1
+}

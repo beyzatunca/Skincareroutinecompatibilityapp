@@ -1,0 +1,32 @@
+{
+  "source": "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/ProductDetail/Components/KeyActivesPanel.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Key Actives",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 7
+        }
+      },
+      {
+        "comment": "",
+        "key": "Lightweight sunscreen for daily protection",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 16
+        }
+      },
+      {
+        "comment": "",
+        "key": "See full list of ingredients",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 21
+        }
+      }
+    ]
+  },
+  "version": 1
+}

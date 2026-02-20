@@ -1,0 +1,24 @@
+{
+  "source": "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Home/Components/HomeHeaderView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Your Routine",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 67
+        }
+      },
+      {
+        "comment": "",
+        "key": "Build your personalized skincare journey",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 71
+        }
+      }
+    ]
+  },
+  "version": 1
+}

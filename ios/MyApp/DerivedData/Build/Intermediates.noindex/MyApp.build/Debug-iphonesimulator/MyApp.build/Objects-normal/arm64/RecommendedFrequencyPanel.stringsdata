@@ -1,0 +1,16 @@
+{
+  "source": "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/ProductDetail/Components/RecommendedFrequencyPanel.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Recommended Frequency",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 11
+        }
+      }
+    ]
+  },
+  "version": 1
+}

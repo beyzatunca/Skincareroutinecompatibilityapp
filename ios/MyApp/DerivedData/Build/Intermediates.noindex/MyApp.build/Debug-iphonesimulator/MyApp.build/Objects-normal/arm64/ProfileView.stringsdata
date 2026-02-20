@@ -1,0 +1,24 @@
+{
+  "source": "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Placeholders/ProfileView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Profile",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 6
+        }
+      },
+      {
+        "comment": "",
+        "key": "Placeholder tab",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 8
+        }
+      }
+    ]
+  },
+  "version": 1
+}

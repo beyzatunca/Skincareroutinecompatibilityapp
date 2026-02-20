@@ -1,0 +1,32 @@
+{
+  "source": "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/ProductDetail/Components/RoutinePlacementPanel.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Routine Placement",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 7
+        }
+      },
+      {
+        "comment": "",
+        "key": "Protection Step",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 11
+        }
+      },
+      {
+        "comment": "",
+        "key": "Swipe to see the full routine flow →",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 37
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,24 @@
+{
+  "source": "/Users/beyzaerdemli/Skincareroutinecompatibilityapp/ios/MyApp/MyApp/Views/Wishlist/WishlistSheetView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "My Wishlist",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 26
+        }
+      },
+      {
+        "comment": "",
+        "key": "Wishlist items",
+        "location": {
+          "startingColumn": 14,
+          "startingLine": 46
+        }
+      }
+    ]
+  },
+  "version": 1
+}

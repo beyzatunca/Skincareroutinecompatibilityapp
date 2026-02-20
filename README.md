@@ -1,11 +1,25 @@
+# Skincare Routine Compatibility App
 
-  # Skincare Routine Compatibility App
+Native **iOS uygulaması** (SwiftUI). Bu proje Figma’dan export edilen web kodu ile ilişkili değildir; bağımsız bir iOS projesidir.
 
-  This is a code bundle for Skincare Routine Compatibility App. The original project is available at https://www.figma.com/design/XYQiA4Hd9778GsVrL5Cd1d/Skincare-Routine-Compatibility-App.
+## iOS uygulamasını çalıştırma
 
-  ## Running the code
+1. `ios/Skincareroutinecompatibilityapp.xcodeproj` dosyasını Xcode ile açın.
+2. Bir iOS Simulator seçin (örn. iPhone 16 Plus).
+3. **Product → Run** (⌘R) ile derleyip simülatörde çalıştırın.
 
-  Run `npm i` to install the dependencies.
+### Komut satırından
 
-  Run `npm run dev` to start the development server.
-  
+```bash
+cd ios
+xcodebuild -scheme Skincareroutinecompatibilityapp \
+  -destination 'platform=iOS Simulator,name=iPhone 16 Plus,OS=18.5' \
+  build
+```
+
+Ardından derlenen `.app` dosyasını simülatöre yükleyip `com.skincareroutine.app` bundle identifier ile başlatabilirsiniz.
+
+## Proje yapısı
+
+- **`ios/`** – SwiftUI iOS uygulaması (ana proje)
+- Kök dizindeki `package.json`, `src/`, `index.html` vb. bu iOS uygulaması ile alakalı değildir.
