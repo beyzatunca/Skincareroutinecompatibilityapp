@@ -4,11 +4,26 @@ struct ProductRow: View {
     let product: Product
     let onTap: () -> Void
 
+    private var productThumbnail: some View {
+        Group {
+            if let name = product.imageName {
+                Image(name)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: Design.productsThumbnailSize, height: Design.productsThumbnailSize)
+                    .clipped()
+            } else {
+                RoundedRectangle(cornerRadius: Design.space8)
+                    .fill(Color.gray.opacity(0.2))
+            }
+        }
+        .clipShape(RoundedRectangle(cornerRadius: Design.space8))
+    }
+
     var body: some View {
         Button(action: onTap) {
             HStack(alignment: .top, spacing: Design.productsRowPadding) {
-                RoundedRectangle(cornerRadius: Design.space8)
-                    .fill(Color.gray.opacity(0.2))
+                productThumbnail
                     .frame(width: Design.productsThumbnailSize, height: Design.productsThumbnailSize)
 
                 VStack(alignment: .leading, spacing: Design.space4) {

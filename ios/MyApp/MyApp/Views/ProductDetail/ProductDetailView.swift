@@ -79,7 +79,7 @@ struct ProductDetailView: View {
 
     private var whiteContent: some View {
         VStack(alignment: .leading, spacing: Design.space20) {
-            ProductHeroImage()
+            ProductHeroImage(imageName: viewModel.product?.imageName)
                 .padding(.horizontal, Design.contentHorizontalPadding)
                 .padding(.top, Design.space8)
 

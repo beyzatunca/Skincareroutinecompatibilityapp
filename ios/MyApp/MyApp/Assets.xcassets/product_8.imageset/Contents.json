@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "635494317206_Hydrating-B5-30ml_SkinCeuticals.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "635494317206_Hydrating-B5-30ml_SkinCeuticals 1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "635494317206_Hydrating-B5-30ml_SkinCeuticals 2.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

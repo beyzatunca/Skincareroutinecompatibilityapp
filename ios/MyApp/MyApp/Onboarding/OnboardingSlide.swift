@@ -36,11 +36,7 @@ struct OnboardingSlide {
                 "Update your routine safely",
                 "Maintain skin-friendly practices"
             ],
-            imageStyle: .scattered(
-                topLeft: "OnboardingRoutine3",
-                centerRight: "OnboardingRoutine2",
-                bottomCenter: "OnboardingRoutine1"
-            )
+            imageStyle: .single("OnboardingRoutineBuildHealthy")
         )
     ]
 }

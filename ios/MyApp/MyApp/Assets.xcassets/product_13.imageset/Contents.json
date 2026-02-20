@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "kiehls-face-ultra-facial-cream-50ml-3605970360757-whip.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "kiehls-face-ultra-facial-cream-50ml-3605970360757-whip 1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "kiehls-face-ultra-facial-cream-50ml-3605970360757-whip 2.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

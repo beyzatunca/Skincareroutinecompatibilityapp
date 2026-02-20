@@ -1,0 +1,27 @@
+{
+  "images" : [
+    {
+      "filename" : "kiehls-face-ultra-facial-barrier-cream-50ml-4936968807336-front.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "kiehls-face-ultra-facial-barrier-cream-50ml-4936968807336-front 1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "kiehls-face-ultra-facial-barrier-cream-50ml-4936968807336-front 2.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

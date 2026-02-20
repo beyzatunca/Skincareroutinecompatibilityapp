@@ -3,15 +3,22 @@ import SwiftUI
 struct OnboardingPageView: View {
     let slide: OnboardingSlide
     
+    private let designContainerW: CGFloat = 384
+    private let designContainerH: CGFloat = 256
+    /// Ekrana sığması için ölçek (375 - 64 padding = 311; 311/384)
+    private var scatteredScale: CGFloat { min(1, (UIScreen.main.bounds.width - 64) / designContainerW) }
+    private var scaledWidth: CGFloat { designContainerW * scatteredScale }
+    private var scaledHeight: CGFloat { designContainerH * scatteredScale }
+
     var body: some View {
         ScrollView {
             VStack(spacing: 0) {
                 imageSection
                     .padding(.bottom, 32)
-                
+
                 titleSection
                     .padding(.bottom, 16)
-                
+
                 descriptionSection
             }
             .padding(.horizontal, 32)
@@ -21,33 +28,35 @@ struct OnboardingPageView: View {
         }
         .scrollIndicators(.hidden)
     }
-    
+
     @ViewBuilder
     private var imageSection: some View {
-        switch slide.imageStyle {
-        case .single(let name):
-            Image(name)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 256, height: 256)
-        case .scattered(let topLeft, let centerRight, let bottomCenter):
-            scatteredImages(topLeft: topLeft, centerRight: centerRight, bottomCenter: bottomCenter)
+        Group {
+            switch slide.imageStyle {
+            case .single(let name):
+                Image(name)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 256, height: 256)
+            case .scattered(let topLeft, let centerRight, let bottomCenter):
+                scatteredImages(topLeft: topLeft, centerRight: centerRight, bottomCenter: bottomCenter)
+            }
         }
+        .frame(maxWidth: .infinity)
     }
-    
+
     private func scatteredImages(topLeft: String, centerRight: String, bottomCenter: String) -> some View {
         let cardW: CGFloat = 160
         let cardH: CGFloat = 208
         let corner: CGFloat = 16
-        let containerW: CGFloat = 384
-        let containerH: CGFloat = 256
-        // Web: bottom center at bottom-0 left-1/2, center right top-4 right-0, top left top-0 left-0
+        let containerW = designContainerW
+        let containerH = designContainerH
         let bottomCenterX = (containerW - cardW) / 2
         let bottomCenterY = containerH - cardH
         let centerRightX = containerW - cardW
         let centerRightY: CGFloat = 16
         let topLeftY: CGFloat = 0
-        
+
         return ZStack(alignment: .topLeading) {
             Image(bottomCenter)
                 .resizable()
@@ -62,7 +71,7 @@ struct OnboardingPageView: View {
                 .rotationEffect(.degrees(3))
                 .offset(x: bottomCenterX, y: bottomCenterY)
                 .zIndex(1)
-            
+
             Image(centerRight)
                 .resizable()
                 .scaledToFill()
@@ -76,7 +85,7 @@ struct OnboardingPageView: View {
                 .rotationEffect(.degrees(6))
                 .offset(x: centerRightX, y: centerRightY)
                 .zIndex(2)
-            
+
             Image(topLeft)
                 .resizable()
                 .scaledToFill()
@@ -92,6 +101,8 @@ struct OnboardingPageView: View {
                 .zIndex(3)
         }
         .frame(width: containerW, height: containerH)
+        .scaleEffect(scatteredScale)
+        .frame(width: scaledWidth, height: scaledHeight)
     }
     
     private var titleSection: some View {

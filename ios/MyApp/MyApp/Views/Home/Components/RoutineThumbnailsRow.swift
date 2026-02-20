@@ -1,6 +1,7 @@
 import SwiftUI
 
 /// Up to 3 circles: product thumbnails first (placeholder if no image), then "+" placeholders.
+/// Circles use an overlapping stack (avatar-style); leftmost appears on top.
 struct RoutineThumbnailsRow: View {
     let products: [Product]
 
@@ -9,18 +10,23 @@ struct RoutineThumbnailsRow: View {
     private static let shadowColor = Color.black.opacity(0.25)
     private static let shadowRadius: CGFloat = 10
     private static let plusColor = Color(hex: "9CA3AF")
+    /// Overlap between circles (pts); negative HStack spacing.
+    private static let overlap: CGFloat = 12
 
     var body: some View {
-        HStack(spacing: Design.space8) {
+        HStack(spacing: -Self.overlap) {
             ForEach(0..<3, id: \.self) { index in
-                if index < products.count {
-                    productThumbnail(products[index])
-                } else {
-                    plusPlaceholder
+                Group {
+                    if index < products.count {
+                        productThumbnail(products[index])
+                    } else {
+                        plusPlaceholder
+                    }
                 }
+                .zIndex(Double(3 - 1 - index))
             }
         }
-        .frame(maxWidth: .infinity)
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 
     private func productThumbnail(_ product: Product) -> some View {

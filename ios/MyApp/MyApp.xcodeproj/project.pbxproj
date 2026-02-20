@@ -3,42 +3,217 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
-		B20000000000000000000001 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
-			};
-			buildConfigurationList = B20000000000000000000002 /* Build configuration list for PBXProject "MyApp" */;
-			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = B20000000000000000000003;
-			productRefGroup = B20000000000000000000004 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				B20000000000000000000008 /* MyApp */,
-			);
-		};
-		B20000000000000000000002 /* Build configuration list for PBXProject "MyApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B20000000000000000000005 /* Debug */,
-				B20000000000000000000006 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B20000000000000000000003 /* Main */ = {
+/* Begin PBXBuildFile section */
+		B20000000000000000000012 /* MyAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000009 /* MyAppApp.swift */; };
+		B20000000000000000000013 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000000A /* OnboardingView.swift */; };
+		B20000000000000000000015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000014 /* Assets.xcassets */; };
+		B20000000000000000000018 /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000001B /* OnboardingPageView.swift */; };
+		B20000000000000000000019 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000001C /* OnboardingSlide.swift */; };
+		B2000000000000000000001A /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000001D /* Color+Hex.swift */; };
+		B20000000000000000000034 /* LearnCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000020 /* LearnCard.swift */; };
+		B20000000000000000000035 /* DesignConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000033 /* DesignConstants.swift */; };
+		B20000000000000000000036 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000021 /* MainTabView.swift */; };
+		B20000000000000000000037 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000023 /* HomeView.swift */; };
+		B20000000000000000000038 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000025 /* HomeHeaderView.swift */; };
+		B20000000000000000000039 /* HomeActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000026 /* HomeActionButton.swift */; };
+		B2000000000000000000003A /* RoutineCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000027 /* RoutineCardView.swift */; };
+		B2000000000000000000003B /* LearnDiscoverCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000028 /* LearnDiscoverCarousel.swift */; };
+		B2000000000000000000003C /* BottomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000002C /* BottomTabBar.swift */; };
+		B2000000000000000000003D /* AddProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000002D /* AddProductsView.swift */; };
+		B2000000000000000000003E /* CompatibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000002E /* CompatibilityView.swift */; };
+		B2000000000000000000003F /* MorningRoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000002F /* MorningRoutineView.swift */; };
+		B20000000000000000000040 /* EveningRoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000030 /* EveningRoutineView.swift */; };
+		B20000000000000000000041 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000031 /* DiscoverView.swift */; };
+		B20000000000000000000042 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000032 /* ProfileView.swift */; };
+		B20000000000000000000053 /* SurveyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000043 /* SurveyModels.swift */; };
+		B20000000000000000000054 /* PersonalizedSurveyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000045 /* PersonalizedSurveyViewModel.swift */; };
+		B20000000000000000000055 /* PersonalizedSurveyContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000047 /* PersonalizedSurveyContainerView.swift */; };
+		B20000000000000000000056 /* SurveyStepOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000048 /* SurveyStepOneView.swift */; };
+		B20000000000000000000057 /* SurveyStepTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000049 /* SurveyStepTwoView.swift */; };
+		B20000000000000000000058 /* SurveyStepThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000004A /* SurveyStepThreeView.swift */; };
+		B20000000000000000000059 /* SurveyProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000004C /* SurveyProgressBar.swift */; };
+		B2000000000000000000005A /* SelectableChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000004D /* SelectableChip.swift */; };
+		B2000000000000000000005B /* SurveySectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000004E /* SurveySectionHeader.swift */; };
+		B2000000000000000000005C /* SurveyPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000004F /* SurveyPrimaryButton.swift */; };
+		B2000000000000000000005D /* SurveyCheckboxRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000050 /* SurveyCheckboxRow.swift */; };
+		B2000000000000000000005E /* SurveyBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000051 /* SurveyBackButton.swift */; };
+		B2000000000000000000005F /* StickyBottomCTAContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000052 /* StickyBottomCTAContainer.swift */; };
+		B20000000000000000000061 /* SurveyHelperBullets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000060 /* SurveyHelperBullets.swift */; };
+		B20000000000000000000080 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000070 /* Product.swift */; };
+		B20000000000000000000081 /* ProductCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000071 /* ProductCategory.swift */; };
+		B20000000000000000000082 /* ProductsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000072 /* ProductsRoute.swift */; };
+		B20000000000000000000083 /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000073 /* ProductsViewModel.swift */; };
+		B20000000000000000000084 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000074 /* ProductsView.swift */; };
+		B20000000000000000000085 /* ProductsTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000077 /* ProductsTopBar.swift */; };
+		B20000000000000000000086 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000078 /* SearchBar.swift */; };
+		B20000000000000000000087 /* CategoryChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000079 /* CategoryChip.swift */; };
+		B20000000000000000000088 /* ActionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000007A /* ActionCard.swift */; };
+		B20000000000000000000089 /* PersonalizedInfoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000007B /* PersonalizedInfoCard.swift */; };
+		B2000000000000000000008A /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000007C /* ProductRow.swift */; };
+		B2000000000000000000008B /* PriceBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000007D /* PriceBadge.swift */; };
+		B2000000000000000000008C /* IngredientTagPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000007E /* IngredientTagPill.swift */; };
+		B2000000000000000000008D /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000006F /* AppRoute.swift */; };
+		B20000000000000000000098 /* CameraPermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000092 /* CameraPermissionService.swift */; };
+		B20000000000000000000099 /* ScanEntryRouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000093 /* ScanEntryRouterView.swift */; };
+		B2000000000000000000009A /* CameraAccessDeniedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000094 /* CameraAccessDeniedView.swift */; };
+		B2000000000000000000009B /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000095 /* BarcodeScannerView.swift */; };
+		B2000000000000000000009C /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000096 /* CameraPreview.swift */; };
+		B200000000000000000000A1 /* WishlistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000097 /* WishlistItem.swift */; };
+		B200000000000000000000A2 /* WishlistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000009D /* WishlistViewModel.swift */; };
+		B200000000000000000000A3 /* WishlistSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000009F /* WishlistSheetView.swift */; };
+		B200000000000000000000A4 /* WishlistEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000A0 /* WishlistEmptyStateView.swift */; };
+		B200000000000000000000B0 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000AF /* ProductDetailView.swift */; };
+		B200000000000000000000B1 /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000A6 /* ProductDetailViewModel.swift */; };
+		B200000000000000000000B2 /* ProductHeroImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000A9 /* ProductHeroImage.swift */; };
+		B200000000000000000000B3 /* AttributePill.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000AA /* AttributePill.swift */; };
+		B200000000000000000000B4 /* MatchCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000AB /* MatchCard.swift */; };
+		B200000000000000000000B5 /* FloatingActionsBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000AC /* FloatingActionsBar.swift */; };
+		B200000000000000000000B6 /* ChatFloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000AD /* ChatFloatingButton.swift */; };
+		B200000000000000000000B7 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000AE /* SectionHeader.swift */; };
+		B200000000000000000000BD /* DetailPanelCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000B8 /* DetailPanelCard.swift */; };
+		B200000000000000000000BE /* KeyActivesPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000B9 /* KeyActivesPanel.swift */; };
+		B200000000000000000000BF /* HowToUsePanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000BA /* HowToUsePanel.swift */; };
+		B200000000000000000000C0 /* RecommendedFrequencyPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000BB /* RecommendedFrequencyPanel.swift */; };
+		B200000000000000000000C1 /* RoutinePlacementPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000BC /* RoutinePlacementPanel.swift */; };
+		B200000000000000000000C7 /* AIChatbotButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000C3 /* AIChatbotButton.swift */; };
+		B200000000000000000000C8 /* SkincareCoachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000C4 /* SkincareCoachView.swift */; };
+		B200000000000000000000C9 /* SkincareCoachViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000C5 /* SkincareCoachViewModel.swift */; };
+		B200000000000000000000CF /* NegativeEffectsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000FF /* NegativeEffectsPanel.swift */; };
+		B200000000000000000000D0 /* GetPersonalizedResultsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000FD /* GetPersonalizedResultsCard.swift */; };
+		B200000000000000000000E0 /* PositiveEffectsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000FE /* PositiveEffectsPanel.swift */; };
+		B200000000000000000000E1 /* RoutineSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000D1 /* RoutineSelection.swift */; };
+		B200000000000000000000E2 /* AddToRoutineSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000D2 /* AddToRoutineSheetView.swift */; };
+		B200000000000000000000E3 /* SegmentedPillSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000D3 /* SegmentedPillSelector.swift */; };
+		B200000000000000000000E4 /* SelectableListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000D4 /* SelectableListRow.swift */; };
+		B200000000000000000000E5 /* PrimaryCTAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000D5 /* PrimaryCTAButton.swift */; };
+		B200000000000000000000E6 /* RoutineStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000D8 /* RoutineStore.swift */; };
+		B200000000000000000000E7 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000D9 /* AppState.swift */; };
+		B200000000000000000000E8 /* ToastBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000DA /* ToastBanner.swift */; };
+		B200000000000000000000E9 /* RoutineThumbnailsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000DB /* RoutineThumbnailsRow.swift */; };
+		B200000000000000000000EA /* RoutineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000DC /* RoutineItem.swift */; };
+		B200000000000000000000EB /* RoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000DD /* RoutineView.swift */; };
+		B200000000000000000000EC /* RoutineItemCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000DE /* RoutineItemCardView.swift */; };
+		B200000000000000000000ED /* ConfirmRemoveModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000DF /* ConfirmRemoveModal.swift */; };
+		B200000000000000000000F7 /* ProfileSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000F4 /* ProfileSectionHeader.swift */; };
+		B200000000000000000000F8 /* ProfileRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000F5 /* ProfileRow.swift */; };
+		B200000000000000000000F9 /* InfoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000F6 /* InfoCard.swift */; };
+		B200000000000000000000FA /* YourProfileSummaryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000F3 /* YourProfileSummaryCard.swift */; };
+		B200000000000000000000FC /* UserProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000FB /* UserProfileStore.swift */; };
+		B20000000000000000000104 /* CompatibilityResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000101 /* CompatibilityResultsView.swift */; };
+		B20000000000000000000105 /* CompatibilityResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000103 /* CompatibilityResultsViewModel.swift */; };
+		B20000000000000000000108 /* WishlistStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000106 /* WishlistStore.swift */; };
+		B20000000000000000000109 /* AmazonLinkOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000107 /* AmazonLinkOpener.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B20000000000000000000009 /* MyAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppApp.swift; sourceTree = "<group>"; };
+		B2000000000000000000000A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		B2000000000000000000000B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2000000000000000000000F /* Routine Compatibility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Routine Compatibility.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20000000000000000000014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2000000000000000000001B /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
+		B2000000000000000000001C /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		B2000000000000000000001D /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		B20000000000000000000020 /* LearnCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnCard.swift; sourceTree = "<group>"; };
+		B20000000000000000000021 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		B20000000000000000000023 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B20000000000000000000025 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		B20000000000000000000026 /* HomeActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeActionButton.swift; sourceTree = "<group>"; };
+		B20000000000000000000027 /* RoutineCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineCardView.swift; sourceTree = "<group>"; };
+		B20000000000000000000028 /* LearnDiscoverCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnDiscoverCarousel.swift; sourceTree = "<group>"; };
+		B2000000000000000000002C /* BottomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabBar.swift; sourceTree = "<group>"; };
+		B2000000000000000000002D /* AddProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductsView.swift; sourceTree = "<group>"; };
+		B2000000000000000000002E /* CompatibilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompatibilityView.swift; sourceTree = "<group>"; };
+		B2000000000000000000002F /* MorningRoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningRoutineView.swift; sourceTree = "<group>"; };
+		B20000000000000000000030 /* EveningRoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveningRoutineView.swift; sourceTree = "<group>"; };
+		B20000000000000000000031 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		B20000000000000000000032 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		B20000000000000000000033 /* DesignConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignConstants.swift; sourceTree = "<group>"; };
+		B20000000000000000000043 /* SurveyModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyModels.swift; sourceTree = "<group>"; };
+		B20000000000000000000045 /* PersonalizedSurveyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizedSurveyViewModel.swift; sourceTree = "<group>"; };
+		B20000000000000000000047 /* PersonalizedSurveyContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizedSurveyContainerView.swift; sourceTree = "<group>"; };
+		B20000000000000000000048 /* SurveyStepOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyStepOneView.swift; sourceTree = "<group>"; };
+		B20000000000000000000049 /* SurveyStepTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyStepTwoView.swift; sourceTree = "<group>"; };
+		B2000000000000000000004A /* SurveyStepThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyStepThreeView.swift; sourceTree = "<group>"; };
+		B2000000000000000000004C /* SurveyProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyProgressBar.swift; sourceTree = "<group>"; };
+		B2000000000000000000004D /* SelectableChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableChip.swift; sourceTree = "<group>"; };
+		B2000000000000000000004E /* SurveySectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveySectionHeader.swift; sourceTree = "<group>"; };
+		B2000000000000000000004F /* SurveyPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyPrimaryButton.swift; sourceTree = "<group>"; };
+		B20000000000000000000050 /* SurveyCheckboxRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyCheckboxRow.swift; sourceTree = "<group>"; };
+		B20000000000000000000051 /* SurveyBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyBackButton.swift; sourceTree = "<group>"; };
+		B20000000000000000000052 /* StickyBottomCTAContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyBottomCTAContainer.swift; sourceTree = "<group>"; };
+		B20000000000000000000060 /* SurveyHelperBullets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyHelperBullets.swift; sourceTree = "<group>"; };
+		B2000000000000000000006F /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
+		B20000000000000000000070 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		B20000000000000000000071 /* ProductCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategory.swift; sourceTree = "<group>"; };
+		B20000000000000000000072 /* ProductsRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRoute.swift; sourceTree = "<group>"; };
+		B20000000000000000000073 /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
+		B20000000000000000000074 /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
+		B20000000000000000000077 /* ProductsTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTopBar.swift; sourceTree = "<group>"; };
+		B20000000000000000000078 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		B20000000000000000000079 /* CategoryChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryChip.swift; sourceTree = "<group>"; };
+		B2000000000000000000007A /* ActionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCard.swift; sourceTree = "<group>"; };
+		B2000000000000000000007B /* PersonalizedInfoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizedInfoCard.swift; sourceTree = "<group>"; };
+		B2000000000000000000007C /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
+		B2000000000000000000007D /* PriceBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceBadge.swift; sourceTree = "<group>"; };
+		B2000000000000000000007E /* IngredientTagPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientTagPill.swift; sourceTree = "<group>"; };
+		B20000000000000000000092 /* CameraPermissionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPermissionService.swift; sourceTree = "<group>"; };
+		B20000000000000000000093 /* ScanEntryRouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanEntryRouterView.swift; sourceTree = "<group>"; };
+		B20000000000000000000094 /* CameraAccessDeniedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAccessDeniedView.swift; sourceTree = "<group>"; };
+		B20000000000000000000095 /* BarcodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
+		B20000000000000000000096 /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		B20000000000000000000097 /* WishlistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistItem.swift; sourceTree = "<group>"; };
+		B2000000000000000000009D /* WishlistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewModel.swift; sourceTree = "<group>"; };
+		B2000000000000000000009F /* WishlistSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistSheetView.swift; sourceTree = "<group>"; };
+		B200000000000000000000A0 /* WishlistEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistEmptyStateView.swift; sourceTree = "<group>"; };
+		B200000000000000000000A6 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
+		B200000000000000000000A9 /* ProductHeroImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductHeroImage.swift; sourceTree = "<group>"; };
+		B200000000000000000000AA /* AttributePill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributePill.swift; sourceTree = "<group>"; };
+		B200000000000000000000AB /* MatchCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCard.swift; sourceTree = "<group>"; };
+		B200000000000000000000AC /* FloatingActionsBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionsBar.swift; sourceTree = "<group>"; };
+		B200000000000000000000AD /* ChatFloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatFloatingButton.swift; sourceTree = "<group>"; };
+		B200000000000000000000AE /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		B200000000000000000000AF /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		B200000000000000000000B8 /* DetailPanelCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPanelCard.swift; sourceTree = "<group>"; };
+		B200000000000000000000B9 /* KeyActivesPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyActivesPanel.swift; sourceTree = "<group>"; };
+		B200000000000000000000BA /* HowToUsePanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUsePanel.swift; sourceTree = "<group>"; };
+		B200000000000000000000BB /* RecommendedFrequencyPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedFrequencyPanel.swift; sourceTree = "<group>"; };
+		B200000000000000000000BC /* RoutinePlacementPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinePlacementPanel.swift; sourceTree = "<group>"; };
+		B200000000000000000000C3 /* AIChatbotButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIChatbotButton.swift; sourceTree = "<group>"; };
+		B200000000000000000000C4 /* SkincareCoachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkincareCoachView.swift; sourceTree = "<group>"; };
+		B200000000000000000000C5 /* SkincareCoachViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkincareCoachViewModel.swift; sourceTree = "<group>"; };
+		B200000000000000000000D1 /* RoutineSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineSelection.swift; sourceTree = "<group>"; };
+		B200000000000000000000D2 /* AddToRoutineSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToRoutineSheetView.swift; sourceTree = "<group>"; };
+		B200000000000000000000D3 /* SegmentedPillSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedPillSelector.swift; sourceTree = "<group>"; };
+		B200000000000000000000D4 /* SelectableListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableListRow.swift; sourceTree = "<group>"; };
+		B200000000000000000000D5 /* PrimaryCTAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryCTAButton.swift; sourceTree = "<group>"; };
+		B200000000000000000000D8 /* RoutineStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineStore.swift; sourceTree = "<group>"; };
+		B200000000000000000000D9 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		B200000000000000000000DA /* ToastBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastBanner.swift; sourceTree = "<group>"; };
+		B200000000000000000000DB /* RoutineThumbnailsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineThumbnailsRow.swift; sourceTree = "<group>"; };
+		B200000000000000000000DC /* RoutineItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineItem.swift; sourceTree = "<group>"; };
+		B200000000000000000000DD /* RoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineView.swift; sourceTree = "<group>"; };
+		B200000000000000000000DE /* RoutineItemCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineItemCardView.swift; sourceTree = "<group>"; };
+		B200000000000000000000DF /* ConfirmRemoveModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmRemoveModal.swift; sourceTree = "<group>"; };
+		B200000000000000000000F3 /* YourProfileSummaryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourProfileSummaryCard.swift; sourceTree = "<group>"; };
+		B200000000000000000000F4 /* ProfileSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSectionHeader.swift; sourceTree = "<group>"; };
+		B200000000000000000000F5 /* ProfileRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRow.swift; sourceTree = "<group>"; };
+		B200000000000000000000F6 /* InfoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCard.swift; sourceTree = "<group>"; };
+		B200000000000000000000FB /* UserProfileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileStore.swift; sourceTree = "<group>"; };
+		B200000000000000000000FD /* GetPersonalizedResultsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPersonalizedResultsCard.swift; sourceTree = "<group>"; };
+		B200000000000000000000FE /* PositiveEffectsPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositiveEffectsPanel.swift; sourceTree = "<group>"; };
+		B200000000000000000000FF /* NegativeEffectsPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegativeEffectsPanel.swift; sourceTree = "<group>"; };
+		B20000000000000000000101 /* CompatibilityResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompatibilityResultsView.swift; sourceTree = "<group>"; };
+		B20000000000000000000103 /* CompatibilityResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompatibilityResultsViewModel.swift; sourceTree = "<group>"; };
+		B20000000000000000000106 /* WishlistStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistStore.swift; sourceTree = "<group>"; };
+		B20000000000000000000107 /* AmazonLinkOpener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonLinkOpener.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		B20000000000000000000003 = {
 			isa = PBXGroup;
 			children = (
 				B20000000000000000000004 /* Products */,
@@ -49,58 +224,10 @@
 		B20000000000000000000004 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B2000000000000000000000F /* MyApp.app */,
+				B2000000000000000000000F /* Routine Compatibility.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
-		};
-		B20000000000000000000005 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		B20000000000000000000006 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_OPTIMIZATION_LEVEL = s;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
 		};
 		B20000000000000000000007 /* MyApp */ = {
 			isa = PBXGroup;
@@ -119,15 +246,26 @@
 			path = MyApp;
 			sourceTree = "<group>";
 		};
-		B20000000000000000000090 /* Services */ = {
+		B20000000000000000000016 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				B20000000000000000000092 /* CameraPermissionService.swift */,
+				B2000000000000000000000A /* OnboardingView.swift */,
+				B2000000000000000000001B /* OnboardingPageView.swift */,
+				B2000000000000000000001C /* OnboardingSlide.swift */,
 			);
-			path = Services;
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
-		B20000000000000000000092 /* CameraPermissionService.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPermissionService.swift; sourceTree = "<group>"; };
+		B20000000000000000000017 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000107 /* AmazonLinkOpener.swift */,
+				B2000000000000000000001D /* Color+Hex.swift */,
+				B20000000000000000000033 /* DesignConstants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		B2000000000000000000001E /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +282,69 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		B2000000000000000000001F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000100 /* Analysis */,
+				B20000000000000000000021 /* MainTabView.swift */,
+				B20000000000000000000022 /* Home */,
+				B20000000000000000000046 /* Survey */,
+				B20000000000000000000075 /* Products */,
+				B200000000000000000000A5 /* ProductDetail */,
+				B200000000000000000000D6 /* Routine */,
+				B200000000000000000000C2 /* AI */,
+				B20000000000000000000091 /* Scan */,
+				B2000000000000000000009E /* Wishlist */,
+				B2000000000000000000002A /* Shared */,
+				B2000000000000000000002B /* Placeholders */,
+				B200000000000000000000F1 /* Profile */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B20000000000000000000022 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000023 /* HomeView.swift */,
+				B20000000000000000000024 /* Components */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B20000000000000000000024 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000025 /* HomeHeaderView.swift */,
+				B20000000000000000000026 /* HomeActionButton.swift */,
+				B20000000000000000000027 /* RoutineCardView.swift */,
+				B20000000000000000000028 /* LearnDiscoverCarousel.swift */,
+				B200000000000000000000DB /* RoutineThumbnailsRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B2000000000000000000002A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B2000000000000000000002C /* BottomTabBar.swift */,
+				B200000000000000000000DA /* ToastBanner.swift */,
+				B200000000000000000000DF /* ConfirmRemoveModal.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B2000000000000000000002B /* Placeholders */ = {
+			isa = PBXGroup;
+			children = (
+				B2000000000000000000002D /* AddProductsView.swift */,
+				B2000000000000000000002E /* CompatibilityView.swift */,
+				B2000000000000000000002F /* MorningRoutineView.swift */,
+				B20000000000000000000030 /* EveningRoutineView.swift */,
+				B20000000000000000000031 /* DiscoverView.swift */,
+			);
+			path = Placeholders;
+			sourceTree = "<group>";
+		};
 		B20000000000000000000044 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,27 +356,6 @@
 				B200000000000000000000C5 /* SkincareCoachViewModel.swift */,
 			);
 			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		B20000000000000000000102 /* Analysis */ = {
-			isa = PBXGroup;
-			children = (
-				B20000000000000000000103 /* CompatibilityResultsViewModel.swift */,
-			);
-			path = Analysis;
-			sourceTree = "<group>";
-		};
-		B20000000000000000000103 /* CompatibilityResultsViewModel.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompatibilityResultsViewModel.swift; sourceTree = "<group>"; };
-		B20000000000000000000043 /* SurveyModels.swift */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = SurveyModels.swift;
-			sourceTree = "<group>";
-		};
-		B20000000000000000000045 /* PersonalizedSurveyViewModel.swift */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = PersonalizedSurveyViewModel.swift;
 			sourceTree = "<group>";
 		};
 		B20000000000000000000046 /* Survey */ = {
@@ -190,15 +370,6 @@
 			path = Survey;
 			sourceTree = "<group>";
 		};
-		B20000000000000000000047 /* PersonalizedSurveyContainerView.swift */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = PersonalizedSurveyContainerView.swift;
-			sourceTree = "<group>";
-		};
-		B20000000000000000000048 /* SurveyStepOneView.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyStepOneView.swift; sourceTree = "<group>"; };
-		B20000000000000000000049 /* SurveyStepTwoView.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyStepTwoView.swift; sourceTree = "<group>"; };
-		B2000000000000000000004A /* SurveyStepThreeView.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyStepThreeView.swift; sourceTree = "<group>"; };
 		B2000000000000000000004B /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,20 +385,6 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		B2000000000000000000004C /* SurveyProgressBar.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyProgressBar.swift; sourceTree = "<group>"; };
-		B2000000000000000000004D /* SelectableChip.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableChip.swift; sourceTree = "<group>"; };
-		B2000000000000000000004E /* SurveySectionHeader.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveySectionHeader.swift; sourceTree = "<group>"; };
-		B2000000000000000000004F /* SurveyPrimaryButton.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyPrimaryButton.swift; sourceTree = "<group>"; };
-		B20000000000000000000050 /* SurveyCheckboxRow.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyCheckboxRow.swift; sourceTree = "<group>"; };
-		B20000000000000000000051 /* SurveyBackButton.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyBackButton.swift; sourceTree = "<group>"; };
-		B20000000000000000000052 /* StickyBottomCTAContainer.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyBottomCTAContainer.swift; sourceTree = "<group>"; };
-		B20000000000000000000060 /* SurveyHelperBullets.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyHelperBullets.swift; sourceTree = "<group>"; };
-		B2000000000000000000006F /* AppRoute.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
-		B20000000000000000000070 /* Product.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		B20000000000000000000071 /* ProductCategory.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategory.swift; sourceTree = "<group>"; };
-		B20000000000000000000072 /* ProductsRoute.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRoute.swift; sourceTree = "<group>"; };
-		B20000000000000000000073 /* ProductsViewModel.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
-		B20000000000000000000074 /* ProductsView.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
 		B20000000000000000000075 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,91 +409,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		B20000000000000000000077 /* ProductsTopBar.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTopBar.swift; sourceTree = "<group>"; };
-		B20000000000000000000078 /* SearchBar.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
-		B20000000000000000000079 /* CategoryChip.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryChip.swift; sourceTree = "<group>"; };
-		B2000000000000000000007A /* ActionCard.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCard.swift; sourceTree = "<group>"; };
-		B2000000000000000000007B /* PersonalizedInfoCard.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizedInfoCard.swift; sourceTree = "<group>"; };
-		B2000000000000000000007C /* ProductRow.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
-		B2000000000000000000007D /* PriceBadge.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceBadge.swift; sourceTree = "<group>"; };
-		B2000000000000000000007E /* IngredientTagPill.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientTagPill.swift; sourceTree = "<group>"; };
-		B2000000000000000000001F /* Views */ = {
+		B20000000000000000000090 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				B20000000000000000000100 /* Analysis */,
-				B20000000000000000000021 /* MainTabView.swift */,
-				B20000000000000000000022 /* Home */,
-				B20000000000000000000046 /* Survey */,
-				B20000000000000000000075 /* Products */,
-				B200000000000000000000A5 /* ProductDetail */,
-				B200000000000000000000D6 /* Routine */,
-				B200000000000000000000C2 /* AI */,
-				B20000000000000000000091 /* Scan */,
-				B2000000000000000000009E /* Wishlist */,
-				B2000000000000000000002A /* Shared */,
-				B2000000000000000000002B /* Placeholders */,
-				B200000000000000000000F1 /* Profile */,
+				B20000000000000000000092 /* CameraPermissionService.swift */,
 			);
-			path = Views;
+			path = Services;
 			sourceTree = "<group>";
 		};
-		B20000000000000000000100 /* Analysis */ = {
-			isa = PBXGroup;
-			children = (
-				B20000000000000000000101 /* CompatibilityResultsView.swift */,
-			);
-			path = Analysis;
-			sourceTree = "<group>";
-		};
-		B20000000000000000000101 /* CompatibilityResultsView.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompatibilityResultsView.swift; sourceTree = "<group>"; };
-		B200000000000000000000C2 /* AI */ = {
-			isa = PBXGroup;
-			children = (
-				B200000000000000000000C4 /* SkincareCoachView.swift */,
-				B200000000000000000000C6 /* Components */,
-			);
-			path = AI;
-			sourceTree = "<group>";
-		};
-		B200000000000000000000C4 /* SkincareCoachView.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkincareCoachView.swift; sourceTree = "<group>"; };
-		B200000000000000000000C6 /* AI Components */ = {
-			isa = PBXGroup;
-			children = (
-				B200000000000000000000C3 /* AIChatbotButton.swift */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		B200000000000000000000C3 /* AIChatbotButton.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIChatbotButton.swift; sourceTree = "<group>"; };
-		B200000000000000000000D1 /* RoutineSelection.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineSelection.swift; sourceTree = "<group>"; };
-		B200000000000000000000D2 /* AddToRoutineSheetView.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToRoutineSheetView.swift; sourceTree = "<group>"; };
-		B200000000000000000000D3 /* SegmentedPillSelector.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedPillSelector.swift; sourceTree = "<group>"; };
-		B200000000000000000000D4 /* SelectableListRow.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableListRow.swift; sourceTree = "<group>"; };
-		B200000000000000000000D5 /* PrimaryCTAButton.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryCTAButton.swift; sourceTree = "<group>"; };
-		B200000000000000000000D6 /* Routine */ = {
-			isa = PBXGroup;
-			children = (
-				B200000000000000000000D2 /* AddToRoutineSheetView.swift */,
-				B200000000000000000000DD /* RoutineView.swift */,
-				B200000000000000000000D7 /* Components */,
-			);
-			path = Routine;
-			sourceTree = "<group>";
-		};
-		B200000000000000000000D7 /* Routine Components */ = {
-			isa = PBXGroup;
-			children = (
-				B200000000000000000000D3 /* SegmentedPillSelector.swift */,
-				B200000000000000000000D4 /* SelectableListRow.swift */,
-				B200000000000000000000D5 /* PrimaryCTAButton.swift */,
-				B200000000000000000000DE /* RoutineItemCardView.swift */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		B200000000000000000000DC /* RoutineItem.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineItem.swift; sourceTree = "<group>"; };
-		B200000000000000000000DD /* RoutineView.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineView.swift; sourceTree = "<group>"; };
-		B200000000000000000000DE /* RoutineItemCardView.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineItemCardView.swift; sourceTree = "<group>"; };
 		B20000000000000000000091 /* Scan */ = {
 			isa = PBXGroup;
 			children = (
@@ -348,12 +428,6 @@
 			path = Scan;
 			sourceTree = "<group>";
 		};
-		B20000000000000000000093 /* ScanEntryRouterView.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanEntryRouterView.swift; sourceTree = "<group>"; };
-		B20000000000000000000094 /* CameraAccessDeniedView.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAccessDeniedView.swift; sourceTree = "<group>"; };
-		B20000000000000000000095 /* BarcodeScannerView.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
-		B20000000000000000000096 /* CameraPreview.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
-		B20000000000000000000097 /* WishlistItem.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistItem.swift; sourceTree = "<group>"; };
-		B2000000000000000000009D /* WishlistViewModel.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewModel.swift; sourceTree = "<group>"; };
 		B2000000000000000000009E /* Wishlist */ = {
 			isa = PBXGroup;
 			children = (
@@ -372,8 +446,7 @@
 			path = ProductDetail;
 			sourceTree = "<group>";
 		};
-		B200000000000000000000AF /* ProductDetailView.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
-		B200000000000000000000A8 /* ProductDetail Components */ = {
+		B200000000000000000000A8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				B200000000000000000000A9 /* ProductHeroImage.swift */,
@@ -394,98 +467,44 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		B200000000000000000000FD /* GetPersonalizedResultsCard.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPersonalizedResultsCard.swift; sourceTree = "<group>"; };
-		B200000000000000000000FE /* PositiveEffectsPanel.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositiveEffectsPanel.swift; sourceTree = "<group>"; };
-		B200000000000000000000FF /* NegativeEffectsPanel.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegativeEffectsPanel.swift; sourceTree = "<group>"; };
-		B200000000000000000000A9 /* ProductHeroImage.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductHeroImage.swift; sourceTree = "<group>"; };
-		B200000000000000000000AA /* AttributePill.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributePill.swift; sourceTree = "<group>"; };
-		B200000000000000000000AB /* MatchCard.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCard.swift; sourceTree = "<group>"; };
-		B200000000000000000000AC /* FloatingActionsBar.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionsBar.swift; sourceTree = "<group>"; };
-		B200000000000000000000AD /* ChatFloatingButton.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatFloatingButton.swift; sourceTree = "<group>"; };
-		B200000000000000000000AE /* SectionHeader.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
-		B200000000000000000000B8 /* DetailPanelCard.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPanelCard.swift; sourceTree = "<group>"; };
-		B200000000000000000000B9 /* KeyActivesPanel.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyActivesPanel.swift; sourceTree = "<group>"; };
-		B200000000000000000000BA /* HowToUsePanel.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUsePanel.swift; sourceTree = "<group>"; };
-		B200000000000000000000BB /* RecommendedFrequencyPanel.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedFrequencyPanel.swift; sourceTree = "<group>"; };
-		B200000000000000000000BC /* RoutinePlacementPanel.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinePlacementPanel.swift; sourceTree = "<group>"; };
-		B200000000000000000000A6 /* ProductDetailViewModel.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
-		B200000000000000000000C5 /* SkincareCoachViewModel.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkincareCoachViewModel.swift; sourceTree = "<group>"; };
-		B2000000000000000000009F /* WishlistSheetView.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistSheetView.swift; sourceTree = "<group>"; };
-		B200000000000000000000A0 /* WishlistEmptyStateView.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistEmptyStateView.swift; sourceTree = "<group>"; };
-		B20000000000000000000020 /* LearnCard.swift */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = LearnCard.swift;
-			sourceTree = "<group>";
-		};
-		B20000000000000000000021 /* MainTabView.swift */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = MainTabView.swift;
-			sourceTree = "<group>";
-		};
-		B20000000000000000000022 /* Home */ = {
+		B200000000000000000000C2 /* AI */ = {
 			isa = PBXGroup;
 			children = (
-				B20000000000000000000023 /* HomeView.swift */,
-				B20000000000000000000024 /* Components */,
+				B200000000000000000000C4 /* SkincareCoachView.swift */,
+				B200000000000000000000C6 /* Components */,
 			);
-			path = Home;
+			path = AI;
 			sourceTree = "<group>";
 		};
-		B20000000000000000000023 /* HomeView.swift */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = HomeView.swift;
-			sourceTree = "<group>";
-		};
-		B20000000000000000000024 /* Components */ = {
+		B200000000000000000000C6 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				B20000000000000000000025 /* HomeHeaderView.swift */,
-				B20000000000000000000026 /* HomeActionButton.swift */,
-				B20000000000000000000027 /* RoutineCardView.swift */,
-				B20000000000000000000028 /* LearnDiscoverCarousel.swift */,
-				B200000000000000000000DB /* RoutineThumbnailsRow.swift */,
+				B200000000000000000000C3 /* AIChatbotButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
 		};
-		B20000000000000000000025 /* HomeHeaderView.swift */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = HomeHeaderView.swift;
-			sourceTree = "<group>";
-		};
-		B20000000000000000000026 /* HomeActionButton.swift */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = HomeActionButton.swift;
-			sourceTree = "<group>";
-		};
-		B20000000000000000000027 /* RoutineCardView.swift */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = RoutineCardView.swift;
-			sourceTree = "<group>";
-		};
-		B20000000000000000000028 /* LearnDiscoverCarousel.swift */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = LearnDiscoverCarousel.swift;
-			sourceTree = "<group>";
-		};
-		B2000000000000000000002A /* Shared */ = {
+		B200000000000000000000D6 /* Routine */ = {
 			isa = PBXGroup;
 			children = (
-				B2000000000000000000002C /* BottomTabBar.swift */,
-				B200000000000000000000DA /* ToastBanner.swift */,
-				B200000000000000000000DF /* ConfirmRemoveModal.swift */,
+				B200000000000000000000D2 /* AddToRoutineSheetView.swift */,
+				B200000000000000000000DD /* RoutineView.swift */,
+				B200000000000000000000D7 /* Components */,
 			);
-			path = Shared;
+			path = Routine;
 			sourceTree = "<group>";
 		};
-		B200000000000000000000DF /* ConfirmRemoveModal.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmRemoveModal.swift; sourceTree = "<group>"; };
+		B200000000000000000000D7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B200000000000000000000D3 /* SegmentedPillSelector.swift */,
+				B200000000000000000000D4 /* SelectableListRow.swift */,
+				B200000000000000000000D5 /* PrimaryCTAButton.swift */,
+				B200000000000000000000DE /* RoutineItemCardView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		B200000000000000000000F0 /* Stores */ = {
 			isa = PBXGroup;
 			children = (
@@ -495,24 +514,6 @@
 				B20000000000000000000106 /* WishlistStore.swift */,
 			);
 			path = Stores;
-			sourceTree = "<group>";
-		};
-		B20000000000000000000106 /* WishlistStore.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistStore.swift; sourceTree = "<group>"; };
-		B200000000000000000000FB /* UserProfileStore.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileStore.swift; sourceTree = "<group>"; };
-		B200000000000000000000D8 /* RoutineStore.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineStore.swift; sourceTree = "<group>"; };
-		B200000000000000000000D9 /* AppState.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
-		B200000000000000000000DA /* ToastBanner.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastBanner.swift; sourceTree = "<group>"; };
-		B200000000000000000000DB /* RoutineThumbnailsRow.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineThumbnailsRow.swift; sourceTree = "<group>"; };
-		B2000000000000000000002B /* Placeholders */ = {
-			isa = PBXGroup;
-			children = (
-				B2000000000000000000002D /* AddProductsView.swift */,
-				B2000000000000000000002E /* CompatibilityView.swift */,
-				B2000000000000000000002F /* MorningRoutineView.swift */,
-				B20000000000000000000030 /* EveningRoutineView.swift */,
-				B20000000000000000000031 /* DiscoverView.swift */,
-			);
-			path = Placeholders;
 			sourceTree = "<group>";
 		};
 		B200000000000000000000F1 /* Profile */ = {
@@ -535,56 +536,28 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		B200000000000000000000F3 /* YourProfileSummaryCard.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourProfileSummaryCard.swift; sourceTree = "<group>"; };
-		B200000000000000000000F4 /* ProfileSectionHeader.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSectionHeader.swift; sourceTree = "<group>"; };
-		B200000000000000000000F5 /* ProfileRow.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRow.swift; sourceTree = "<group>"; };
-		B200000000000000000000F6 /* InfoCard.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCard.swift; sourceTree = "<group>"; };
-		B2000000000000000000002C /* BottomTabBar.swift */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = BottomTabBar.swift;
+		B20000000000000000000100 /* Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000101 /* CompatibilityResultsView.swift */,
+			);
+			path = Analysis;
 			sourceTree = "<group>";
 		};
-		B2000000000000000000002D /* AddProductsView.swift */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = AddProductsView.swift;
+		B20000000000000000000102 /* Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000103 /* CompatibilityResultsViewModel.swift */,
+			);
+			path = Analysis;
 			sourceTree = "<group>";
 		};
-		B2000000000000000000002E /* CompatibilityView.swift */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = CompatibilityView.swift;
-			sourceTree = "<group>";
-		};
-		B2000000000000000000002F /* MorningRoutineView.swift */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = MorningRoutineView.swift;
-			sourceTree = "<group>";
-		};
-		B20000000000000000000030 /* EveningRoutineView.swift */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = EveningRoutineView.swift;
-			sourceTree = "<group>";
-		};
-		B20000000000000000000031 /* DiscoverView.swift */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = DiscoverView.swift;
-			sourceTree = "<group>";
-		};
-		B20000000000000000000032 /* ProfileView.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		B20000000000000000000033 /* DesignConstants.swift */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = DesignConstants.swift;
-			sourceTree = "<group>";
-		};
-		B20000000000000000000008 /* MyApp */ = {
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B20000000000000000000008 /* Routine Compatibility */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B2000000000000000000000C /* Build configuration list for PBXNativeTarget "MyApp" */;
+			buildConfigurationList = B2000000000000000000000C /* Build configuration list for PBXNativeTarget "Routine Compatibility" */;
 			buildPhases = (
 				B2000000000000000000000D /* Sources */,
 				B2000000000000000000000E /* Resources */,
@@ -593,38 +566,51 @@
 			);
 			dependencies = (
 			);
-			name = MyApp;
+			name = "Routine Compatibility";
 			productName = MyApp;
-			productReference = B2000000000000000000000F /* MyApp.app */;
+			productReference = B2000000000000000000000F /* Routine Compatibility.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B20000000000000000000009 /* MyAppApp.swift */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = MyAppApp.swift;
-			sourceTree = "<group>";
-		};
-		B2000000000000000000000A /* OnboardingView.swift */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = OnboardingView.swift;
-			sourceTree = "<group>";
-		};
-		B2000000000000000000000B /* Info.plist */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = text.plist.xml;
-			path = Info.plist;
-			sourceTree = "<group>";
-		};
-		B2000000000000000000000C /* Build configuration list for PBXNativeTarget "MyApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B20000000000000000000010 /* Debug */,
-				B20000000000000000000011 /* Release */,
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B20000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = B20000000000000000000002 /* Build configuration list for PBXProject "MyApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
 			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			mainGroup = B20000000000000000000003;
+			productRefGroup = B20000000000000000000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B20000000000000000000008 /* Routine Compatibility */,
+			);
 		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2000000000000000000000E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20000000000000000000015 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
 		B2000000000000000000000D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -729,161 +715,57 @@
 				B20000000000000000000109 /* AmazonLinkOpener.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			sourceTree = "<group>";
 		};
-		B20000000000000000000104 /* CompatibilityResultsView.swift in Sources */ = { isa = PBXBuildFile; fileRef = B20000000000000000000101 /* CompatibilityResultsView.swift */; };
-		B20000000000000000000105 /* CompatibilityResultsViewModel.swift in Sources */ = { isa = PBXBuildFile; fileRef = B20000000000000000000103 /* CompatibilityResultsViewModel.swift */; };
-		B20000000000000000000108 /* WishlistStore.swift in Sources */ = { isa = PBXBuildFile; fileRef = B20000000000000000000106 /* WishlistStore.swift */; };
-		B20000000000000000000109 /* AmazonLinkOpener.swift in Sources */ = { isa = PBXBuildFile; fileRef = B20000000000000000000107 /* AmazonLinkOpener.swift */; };
-		B200000000000000000000FA /* YourProfileSummaryCard.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000F3 /* YourProfileSummaryCard.swift */; };
-		B200000000000000000000F7 /* ProfileSectionHeader.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000F4 /* ProfileSectionHeader.swift */; };
-		B200000000000000000000F8 /* ProfileRow.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000F5 /* ProfileRow.swift */; };
-		B200000000000000000000F9 /* InfoCard.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000F6 /* InfoCard.swift */; };
-		B20000000000000000000053 /* SurveyModels.swift in Sources */ = { isa = PBXBuildFile; fileRef = B20000000000000000000043 /* SurveyModels.swift */; };
-		B20000000000000000000054 /* PersonalizedSurveyViewModel.swift in Sources */ = { isa = PBXBuildFile; fileRef = B20000000000000000000045 /* PersonalizedSurveyViewModel.swift */; };
-		B20000000000000000000055 /* PersonalizedSurveyContainerView.swift in Sources */ = { isa = PBXBuildFile; fileRef = B20000000000000000000047 /* PersonalizedSurveyContainerView.swift */; };
-		B20000000000000000000056 /* SurveyStepOneView.swift in Sources */ = { isa = PBXBuildFile; fileRef = B20000000000000000000048 /* SurveyStepOneView.swift */; };
-		B20000000000000000000057 /* SurveyStepTwoView.swift in Sources */ = { isa = PBXBuildFile; fileRef = B20000000000000000000049 /* SurveyStepTwoView.swift */; };
-		B20000000000000000000058 /* SurveyStepThreeView.swift in Sources */ = { isa = PBXBuildFile; fileRef = B2000000000000000000004A /* SurveyStepThreeView.swift */; };
-		B20000000000000000000059 /* SurveyProgressBar.swift in Sources */ = { isa = PBXBuildFile; fileRef = B2000000000000000000004C /* SurveyProgressBar.swift */; };
-		B2000000000000000000005A /* SelectableChip.swift in Sources */ = { isa = PBXBuildFile; fileRef = B2000000000000000000004D /* SelectableChip.swift */; };
-		B2000000000000000000005B /* SurveySectionHeader.swift in Sources */ = { isa = PBXBuildFile; fileRef = B2000000000000000000004E /* SurveySectionHeader.swift */; };
-		B2000000000000000000005C /* SurveyPrimaryButton.swift in Sources */ = { isa = PBXBuildFile; fileRef = B2000000000000000000004F /* SurveyPrimaryButton.swift */; };
-		B2000000000000000000005D /* SurveyCheckboxRow.swift in Sources */ = { isa = PBXBuildFile; fileRef = B20000000000000000000050 /* SurveyCheckboxRow.swift */; };
-		B2000000000000000000005E /* SurveyBackButton.swift in Sources */ = { isa = PBXBuildFile; fileRef = B20000000000000000000051 /* SurveyBackButton.swift */; };
-		B2000000000000000000005F /* StickyBottomCTAContainer.swift in Sources */ = { isa = PBXBuildFile; fileRef = B20000000000000000000052 /* StickyBottomCTAContainer.swift */; };
-		B20000000000000000000061 /* SurveyHelperBullets.swift in Sources */ = { isa = PBXBuildFile; fileRef = B20000000000000000000060 /* SurveyHelperBullets.swift */; };
-		B2000000000000000000008D /* AppRoute.swift in Sources */ = { isa = PBXBuildFile; fileRef = B2000000000000000000006F /* AppRoute.swift */; };
-		B20000000000000000000080 /* Product.swift in Sources */ = { isa = PBXBuildFile; fileRef = B20000000000000000000070 /* Product.swift */; };
-		B20000000000000000000081 /* ProductCategory.swift in Sources */ = { isa = PBXBuildFile; fileRef = B20000000000000000000071 /* ProductCategory.swift */; };
-		B20000000000000000000082 /* ProductsRoute.swift in Sources */ = { isa = PBXBuildFile; fileRef = B20000000000000000000072 /* ProductsRoute.swift */; };
-		B20000000000000000000083 /* ProductsViewModel.swift in Sources */ = { isa = PBXBuildFile; fileRef = B20000000000000000000073 /* ProductsViewModel.swift */; };
-		B20000000000000000000084 /* ProductsView.swift in Sources */ = { isa = PBXBuildFile; fileRef = B20000000000000000000074 /* ProductsView.swift */; };
-		B20000000000000000000085 /* ProductsTopBar.swift in Sources */ = { isa = PBXBuildFile; fileRef = B20000000000000000000077 /* ProductsTopBar.swift */; };
-		B20000000000000000000086 /* SearchBar.swift in Sources */ = { isa = PBXBuildFile; fileRef = B20000000000000000000078 /* SearchBar.swift */; };
-		B20000000000000000000087 /* CategoryChip.swift in Sources */ = { isa = PBXBuildFile; fileRef = B20000000000000000000079 /* CategoryChip.swift */; };
-		B20000000000000000000088 /* ActionCard.swift in Sources */ = { isa = PBXBuildFile; fileRef = B2000000000000000000007A /* ActionCard.swift */; };
-		B20000000000000000000089 /* PersonalizedInfoCard.swift in Sources */ = { isa = PBXBuildFile; fileRef = B2000000000000000000007B /* PersonalizedInfoCard.swift */; };
-		B2000000000000000000008A /* ProductRow.swift in Sources */ = { isa = PBXBuildFile; fileRef = B2000000000000000000007C /* ProductRow.swift */; };
-		B2000000000000000000008B /* PriceBadge.swift in Sources */ = { isa = PBXBuildFile; fileRef = B2000000000000000000007D /* PriceBadge.swift */; };
-		B2000000000000000000008C /* IngredientTagPill.swift in Sources */ = { isa = PBXBuildFile; fileRef = B2000000000000000000007E /* IngredientTagPill.swift */; };
-		B20000000000000000000098 /* CameraPermissionService.swift in Sources */ = { isa = PBXBuildFile; fileRef = B20000000000000000000092 /* CameraPermissionService.swift */; };
-		B20000000000000000000099 /* ScanEntryRouterView.swift in Sources */ = { isa = PBXBuildFile; fileRef = B20000000000000000000093 /* ScanEntryRouterView.swift */; };
-		B2000000000000000000009A /* CameraAccessDeniedView.swift in Sources */ = { isa = PBXBuildFile; fileRef = B20000000000000000000094 /* CameraAccessDeniedView.swift */; };
-		B2000000000000000000009B /* BarcodeScannerView.swift in Sources */ = { isa = PBXBuildFile; fileRef = B20000000000000000000095 /* BarcodeScannerView.swift */; };
-		B2000000000000000000009C /* CameraPreview.swift in Sources */ = { isa = PBXBuildFile; fileRef = B20000000000000000000096 /* CameraPreview.swift */; };
-		B200000000000000000000A1 /* WishlistItem.swift in Sources */ = { isa = PBXBuildFile; fileRef = B20000000000000000000097 /* WishlistItem.swift */; };
-		B200000000000000000000A2 /* WishlistViewModel.swift in Sources */ = { isa = PBXBuildFile; fileRef = B2000000000000000000009D /* WishlistViewModel.swift */; };
-		B200000000000000000000A3 /* WishlistSheetView.swift in Sources */ = { isa = PBXBuildFile; fileRef = B2000000000000000000009F /* WishlistSheetView.swift */; };
-		B200000000000000000000A4 /* WishlistEmptyStateView.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000A0 /* WishlistEmptyStateView.swift */; };
-		B200000000000000000000B0 /* ProductDetailView.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000AF /* ProductDetailView.swift */; };
-		B200000000000000000000B1 /* ProductDetailViewModel.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000A6 /* ProductDetailViewModel.swift */; };
-		B200000000000000000000B2 /* ProductHeroImage.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000A9 /* ProductHeroImage.swift */; };
-		B200000000000000000000B3 /* AttributePill.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000AA /* AttributePill.swift */; };
-		B200000000000000000000B4 /* MatchCard.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000AB /* MatchCard.swift */; };
-		B200000000000000000000B5 /* FloatingActionsBar.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000AC /* FloatingActionsBar.swift */; };
-		B200000000000000000000B6 /* ChatFloatingButton.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000AD /* ChatFloatingButton.swift */; };
-		B200000000000000000000B7 /* SectionHeader.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000AE /* SectionHeader.swift */; };
-		B200000000000000000000BD /* DetailPanelCard.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000B8 /* DetailPanelCard.swift */; };
-		B200000000000000000000BE /* KeyActivesPanel.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000B9 /* KeyActivesPanel.swift */; };
-		B200000000000000000000BF /* HowToUsePanel.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000BA /* HowToUsePanel.swift */; };
-		B200000000000000000000C0 /* RecommendedFrequencyPanel.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000BB /* RecommendedFrequencyPanel.swift */; };
-		B200000000000000000000C1 /* RoutinePlacementPanel.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000BC /* RoutinePlacementPanel.swift */; };
-		B200000000000000000000D0 /* GetPersonalizedResultsCard.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000FD /* GetPersonalizedResultsCard.swift */; };
-		B200000000000000000000E0 /* PositiveEffectsPanel.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000FE /* PositiveEffectsPanel.swift */; };
-		B200000000000000000000CF /* NegativeEffectsPanel.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000FF /* NegativeEffectsPanel.swift */; };
-		B200000000000000000000C7 /* AIChatbotButton.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000C3 /* AIChatbotButton.swift */; };
-		B200000000000000000000C8 /* SkincareCoachView.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000C4 /* SkincareCoachView.swift */; };
-		B200000000000000000000C9 /* SkincareCoachViewModel.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000C5 /* SkincareCoachViewModel.swift */; };
-		B200000000000000000000E1 /* RoutineSelection.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000D1 /* RoutineSelection.swift */; };
-		B200000000000000000000E2 /* AddToRoutineSheetView.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000D2 /* AddToRoutineSheetView.swift */; };
-		B200000000000000000000E3 /* SegmentedPillSelector.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000D3 /* SegmentedPillSelector.swift */; };
-		B200000000000000000000E4 /* SelectableListRow.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000D4 /* SelectableListRow.swift */; };
-		B200000000000000000000E5 /* PrimaryCTAButton.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000D5 /* PrimaryCTAButton.swift */; };
-		B200000000000000000000E6 /* RoutineStore.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000D8 /* RoutineStore.swift */; };
-		B200000000000000000000E7 /* AppState.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000D9 /* AppState.swift */; };
-		B200000000000000000000FC /* UserProfileStore.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000FB /* UserProfileStore.swift */; };
-		B200000000000000000000E8 /* ToastBanner.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000DA /* ToastBanner.swift */; };
-		B200000000000000000000E9 /* RoutineThumbnailsRow.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000DB /* RoutineThumbnailsRow.swift */; };
-		B200000000000000000000EA /* RoutineItem.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000DC /* RoutineItem.swift */; };
-		B200000000000000000000EB /* RoutineView.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000DD /* RoutineView.swift */; };
-		B200000000000000000000EC /* RoutineItemCardView.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000DE /* RoutineItemCardView.swift */; };
-		B200000000000000000000ED /* ConfirmRemoveModal.swift in Sources */ = { isa = PBXBuildFile; fileRef = B200000000000000000000DF /* ConfirmRemoveModal.swift */; };
-		B20000000000000000000034 /* LearnCard.swift in Sources */ = {
-			isa = PBXBuildFile;
-			fileRef = B20000000000000000000020 /* LearnCard.swift */;
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B20000000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
 		};
-		B20000000000000000000035 /* DesignConstants.swift in Sources */ = {
-			isa = PBXBuildFile;
-			fileRef = B20000000000000000000033 /* DesignConstants.swift */;
-		};
-		B20000000000000000000036 /* MainTabView.swift in Sources */ = {
-			isa = PBXBuildFile;
-			fileRef = B20000000000000000000021 /* MainTabView.swift */;
-		};
-		B20000000000000000000037 /* HomeView.swift in Sources */ = {
-			isa = PBXBuildFile;
-			fileRef = B20000000000000000000023 /* HomeView.swift */;
-		};
-		B20000000000000000000038 /* HomeHeaderView.swift in Sources */ = {
-			isa = PBXBuildFile;
-			fileRef = B20000000000000000000025 /* HomeHeaderView.swift */;
-		};
-		B20000000000000000000039 /* HomeActionButton.swift in Sources */ = {
-			isa = PBXBuildFile;
-			fileRef = B20000000000000000000026 /* HomeActionButton.swift */;
-		};
-		B2000000000000000000003A /* RoutineCardView.swift in Sources */ = {
-			isa = PBXBuildFile;
-			fileRef = B20000000000000000000027 /* RoutineCardView.swift */;
-		};
-		B2000000000000000000003B /* LearnDiscoverCarousel.swift in Sources */ = {
-			isa = PBXBuildFile;
-			fileRef = B20000000000000000000028 /* LearnDiscoverCarousel.swift */;
-		};
-		B2000000000000000000003C /* BottomTabBar.swift in Sources */ = {
-			isa = PBXBuildFile;
-			fileRef = B2000000000000000000002C /* BottomTabBar.swift */;
-		};
-		B2000000000000000000003D /* AddProductsView.swift in Sources */ = {
-			isa = PBXBuildFile;
-			fileRef = B2000000000000000000002D /* AddProductsView.swift */;
-		};
-		B2000000000000000000003E /* CompatibilityView.swift in Sources */ = {
-			isa = PBXBuildFile;
-			fileRef = B2000000000000000000002E /* CompatibilityView.swift */;
-		};
-		B2000000000000000000003F /* MorningRoutineView.swift in Sources */ = {
-			isa = PBXBuildFile;
-			fileRef = B2000000000000000000002F /* MorningRoutineView.swift */;
-		};
-		B20000000000000000000040 /* EveningRoutineView.swift in Sources */ = {
-			isa = PBXBuildFile;
-			fileRef = B20000000000000000000030 /* EveningRoutineView.swift */;
-		};
-		B20000000000000000000041 /* DiscoverView.swift in Sources */ = {
-			isa = PBXBuildFile;
-			fileRef = B20000000000000000000031 /* DiscoverView.swift */;
-		};
-		B20000000000000000000042 /* ProfileView.swift in Sources */ = {
-			isa = PBXBuildFile;
-			fileRef = B20000000000000000000032 /* ProfileView.swift */;
-		};
-		B2000000000000000000000E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B20000000000000000000015 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			sourceTree = "<group>";
-		};
-		B2000000000000000000000F /* MyApp.app */ = {
-			isa = PBXFileReference;
-			explicitFileType = wrapper.application;
-			includeInIndex = 0;
-			path = MyApp.app;
-			sourceTree = BUILT_PRODUCTS_DIR;
+		B20000000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 		B20000000000000000000010 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -893,9 +775,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = N7TA4UQM3U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = MyApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -904,7 +788,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.myapp.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.routinecompatibility.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -920,9 +804,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = N7TA4UQM3U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = MyApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -931,7 +817,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.myapp.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.routinecompatibility.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -939,75 +825,28 @@
 			};
 			name = Release;
 		};
-		B20000000000000000000012 /* MyAppApp.swift in Sources */ = {
-			isa = PBXBuildFile;
-			fileRef = B20000000000000000000009 /* MyAppApp.swift */;
-		};
-		B20000000000000000000013 /* OnboardingView.swift in Sources */ = {
-			isa = PBXBuildFile;
-			fileRef = B2000000000000000000000A /* OnboardingView.swift */;
-		};
-		B20000000000000000000014 /* Assets.xcassets */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = folder.assetcatalog;
-			path = Assets.xcassets;
-			sourceTree = "<group>";
-		};
-		B20000000000000000000015 /* Assets.xcassets in Resources */ = {
-			isa = PBXBuildFile;
-			fileRef = B20000000000000000000014 /* Assets.xcassets */;
-		};
-		B20000000000000000000016 /* Onboarding */ = {
-			isa = PBXGroup;
-			children = (
-				B2000000000000000000000A /* OnboardingView.swift */,
-				B2000000000000000000001B /* OnboardingPageView.swift */,
-				B2000000000000000000001C /* OnboardingSlide.swift */,
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B20000000000000000000002 /* Build configuration list for PBXProject "MyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20000000000000000000005 /* Debug */,
+				B20000000000000000000006 /* Release */,
 			);
-			path = Onboarding;
-			sourceTree = "<group>";
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		B20000000000000000000017 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				B20000000000000000000107 /* AmazonLinkOpener.swift */,
-				B2000000000000000000001D /* Color+Hex.swift */,
-				B20000000000000000000033 /* DesignConstants.swift */,
+		B2000000000000000000000C /* Build configuration list for PBXNativeTarget "Routine Compatibility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20000000000000000000010 /* Debug */,
+				B20000000000000000000011 /* Release */,
 			);
-			path = Helpers;
-			sourceTree = "<group>";
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		B20000000000000000000107 /* AmazonLinkOpener.swift */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonLinkOpener.swift; sourceTree = "<group>"; };
-		B20000000000000000000018 /* OnboardingPageView.swift in Sources */ = {
-			isa = PBXBuildFile;
-			fileRef = B2000000000000000000001B /* OnboardingPageView.swift */;
-		};
-		B20000000000000000000019 /* OnboardingSlide.swift in Sources */ = {
-			isa = PBXBuildFile;
-			fileRef = B2000000000000000000001C /* OnboardingSlide.swift */;
-		};
-		B2000000000000000000001A /* Color+Hex.swift in Sources */ = {
-			isa = PBXBuildFile;
-			fileRef = B2000000000000000000001D /* Color+Hex.swift */;
-		};
-		B2000000000000000000001B /* OnboardingPageView.swift */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = OnboardingPageView.swift;
-			sourceTree = "<group>";
-		};
-		B2000000000000000000001C /* OnboardingSlide.swift */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = OnboardingSlide.swift;
-			sourceTree = "<group>";
-		};
-		B2000000000000000000001D /* Color+Hex.swift */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = "Color+Hex.swift";
-			sourceTree = "<group>";
-		};
+/* End XCConfigurationList section */
 	};
 	rootObject = B20000000000000000000001 /* Project object */;
 }
