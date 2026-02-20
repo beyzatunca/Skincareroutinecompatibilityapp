@@ -17,4 +17,8 @@ enum AppRoute: Hashable {
     case routine
     case compatibility
     case compatibilityResults
+    /// Discover Product Detail: "Analyzing your routine" loading screen, then navigates to productCompatibility.
+    case analyzingProductCompatibility(productId: String)
+    /// Discover Product Detail: check this product against current routine.
+    case productCompatibility(productId: String)
 }

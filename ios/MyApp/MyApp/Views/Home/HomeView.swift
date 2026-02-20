@@ -6,27 +6,15 @@ struct HomeView: View {
     @EnvironmentObject private var appState: AppState
     @EnvironmentObject private var userProfileStore: UserProfileStore
     var body: some View {
-        ZStack(alignment: .top) {
-            ScrollView(.vertical, showsIndicators: false) {
-                VStack(spacing: 0) {
-                    headerSection
-                    contentSection
-                }
-                .padding(.bottom, Design.tabBarEstimatedHeight + Design.space16)
+        ScrollView(.vertical, showsIndicators: false) {
+            VStack(spacing: 0) {
+                headerSection
+                contentSection
             }
-            .background(Color.white)
-            .ignoresSafeArea(edges: .bottom)
-
-            if let toast = appState.toast {
-                ToastBanner(toast: toast) {
-                    appState.toast = nil
-                }
-                .padding(.top, Design.space12)
-                .transition(.move(edge: .top).combined(with: .opacity))
-                .zIndex(10)
-            }
+            .padding(.bottom, Design.tabBarEstimatedHeight + Design.space16)
         }
-        .animation(.easeOut(duration: 0.25), value: appState.toast != nil)
+        .background(Color.white)
+        .ignoresSafeArea(edges: .bottom)
     }
 
     private var headerSection: some View {
@@ -44,19 +32,26 @@ struct HomeView: View {
                     return
                 }
                 path.append(AppRoute.compatibility)
-            }
+            },
+            showCompatibilityGauge: appState.hasCompletedCompatibilityCheck,
+            compatibilityScore: appState.lastCompatibilityScore
         )
         .frame(height: headerHeight)
     }
 
     private var headerHeight: CGFloat {
         let screen = UIScreen.main.bounds.height
+        if appState.hasCompletedCompatibilityCheck {
+            return min(screen * 0.52, 440)
+        }
         return min(screen * 0.42, 380)
     }
 
     private var contentSection: some View {
         VStack(spacing: 0) {
-            whiteContentBackground
+            if hasRoutineProducts {
+                whiteContentBackground
+            }
             learnSection
         }
         .padding(.bottom, Design.space24)
@@ -99,32 +94,7 @@ struct HomeView: View {
         GeometryReader { geo in
             let cardWidth = (geo.size.width - Design.space16) / 2
             HStack(spacing: Design.space16) {
-                if hasRoutineProducts {
-                    NavigationLink(value: AppRoute.routine) {
-                        routineCard(
-                            iconName: "sun.max.fill",
-                            title: "Morning",
-                            subtitle: "AM Routine",
-                            accentColor: "D97706",
-                            gradientEnd: "FCD34D",
-                            products: routineStore.morningProducts,
-                            cardWidth: cardWidth
-                        )
-                    }
-                    .buttonStyle(.plain)
-                    NavigationLink(value: AppRoute.routine) {
-                        routineCard(
-                            iconName: "moon.fill",
-                            title: "Evening",
-                            subtitle: "PM Routine",
-                            accentColor: "2563EB",
-                            gradientEnd: "93C5FD",
-                            products: routineStore.eveningProducts,
-                            cardWidth: cardWidth
-                        )
-                    }
-                    .buttonStyle(.plain)
-                } else {
+                NavigationLink(value: AppRoute.routine) {
                     routineCard(
                         iconName: "sun.max.fill",
                         title: "Morning",
@@ -134,7 +104,9 @@ struct HomeView: View {
                         products: routineStore.morningProducts,
                         cardWidth: cardWidth
                     )
-                    .allowsHitTesting(false)
+                }
+                .buttonStyle(.plain)
+                NavigationLink(value: AppRoute.routine) {
                     routineCard(
                         iconName: "moon.fill",
                         title: "Evening",
@@ -144,8 +116,8 @@ struct HomeView: View {
                         products: routineStore.eveningProducts,
                         cardWidth: cardWidth
                     )
-                    .allowsHitTesting(false)
                 }
+                .buttonStyle(.plain)
             }
         }
         .frame(minHeight: Design.routineCardMinHeight)

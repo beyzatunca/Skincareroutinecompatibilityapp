@@ -38,4 +38,9 @@ final class RoutineStore: ObservableObject {
     func delete(itemId: String) {
         items.removeAll { $0.id == itemId }
     }
+
+    /// Remove all routine products. Used when user clears all data (e.g. from Profile).
+    func clearAll() {
+        items = []
+    }
 }

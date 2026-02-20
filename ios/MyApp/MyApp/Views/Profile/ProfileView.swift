@@ -2,6 +2,9 @@ import SwiftUI
 
 struct ProfileView: View {
     @EnvironmentObject private var userProfileStore: UserProfileStore
+    @EnvironmentObject private var routineStore: RoutineStore
+    @EnvironmentObject private var wishlistStore: WishlistStore
+    @EnvironmentObject private var appState: AppState
     @State private var showSurvey = false
     @State private var showPreferencesPlaceholder = false
     @State private var showPrivacyPolicyPlaceholder = false
@@ -68,6 +71,7 @@ struct ProfileView: View {
                     onRemove: {
                         userProfileStore.resetProfile()
                         showDeleteProfileConfirmation = false
+                        appState.showToast(type: .success, message: "Cleared data successfully")
                     }
                 )
                 .transition(.opacity)
@@ -77,9 +81,15 @@ struct ProfileView: View {
         .animation(.easeOut(duration: 0.22), value: showDeleteProfileConfirmation)
         .alert("Clear All Data", isPresented: $showClearDataConfirmation) {
             Button("Cancel", role: .cancel) {}
-            Button("Clear", role: .destructive) {}
+            Button("Clear", role: .destructive) {
+                routineStore.clearAll()
+                wishlistStore.clearAll()
+                appState.setCompatibilityCheckCompleted(false)
+                showClearDataConfirmation = false
+                appState.showToast(type: .success, message: "Clear all data successfully")
+            }
         } message: {
-            Text("This action will be implemented later.")
+            Text("All routine products and wishlist will be removed.")
         }
     }
 
@@ -183,4 +193,7 @@ struct ProfileView: View {
 #Preview {
     ProfileView()
         .environmentObject(UserProfileStore())
+        .environmentObject(RoutineStore())
+        .environmentObject(WishlistStore())
+        .environmentObject(AppState())
 }

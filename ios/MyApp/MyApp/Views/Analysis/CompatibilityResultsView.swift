@@ -3,6 +3,7 @@ import SwiftUI
 /// Analysis Results screen: Risk Summary (red), Avoid (orange) accordion, Your Safe Schedule (blue), sticky CTA.
 struct CompatibilityResultsView: View {
     @Binding var path: NavigationPath
+    @EnvironmentObject private var appState: AppState
     @StateObject private var viewModel = CompatibilityResultsViewModel()
 
     private static let cardCornerRadius: CGFloat = 15
@@ -15,6 +16,10 @@ struct CompatibilityResultsView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: true) {
             VStack(alignment: .leading, spacing: Design.space20) {
+                CompatibilityScoreGaugeView(score: appState.lastCompatibilityScore)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, Design.space8)
+
                 riskSummaryCard
                 avoidCard
                 safeScheduleCard
@@ -29,9 +34,13 @@ struct CompatibilityResultsView: View {
         }
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)
+        .onAppear {
+            // Score reflects "Your barrier is under risk" content: Fair (40–60) so gauge matches the risk message.
+            appState.setCompatibilityCheckCompleted(true, score: 45)
+        }
         .toolbar {
             ToolbarItem(placement: .principal) {
-                Text("Analysis Results")
+                Text("Compatibility Result")
                     .font(.system(size: Design.headerTitleFontSize, weight: .bold))
                     .foregroundColor(Color(hex: "111827"))
             }
@@ -272,6 +281,8 @@ struct CompatibilityResultsView: View {
     // MARK: - CTA
     private var ctaButton: some View {
         Button {
+            appState.setCompatibilityCheckCompleted(true, score: 85)
+            appState.selectedTab = .home
             path = NavigationPath()
         } label: {
             Text("Adjust My Routine")
@@ -295,5 +306,6 @@ struct CompatibilityResultsView: View {
 #Preview {
     NavigationStack {
         CompatibilityResultsView(path: .constant(NavigationPath()))
+            .environmentObject(AppState())
     }
 }

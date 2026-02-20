@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// Up to 3 circles: product thumbnails first (placeholder if no image), then "+" placeholders.
+/// Up to 3 circles: product thumbnails first (placeholder if no image), then empty circles.
 /// Circles use an overlapping stack (avatar-style); leftmost appears on top.
 struct RoutineThumbnailsRow: View {
     let products: [Product]
@@ -9,7 +9,6 @@ struct RoutineThumbnailsRow: View {
     private static let borderColor = Color.white
     private static let shadowColor = Color.black.opacity(0.25)
     private static let shadowRadius: CGFloat = 10
-    private static let plusColor = Color(hex: "9CA3AF")
     /// Overlap between circles (pts); negative HStack spacing.
     private static let overlap: CGFloat = 12
 
@@ -20,7 +19,7 @@ struct RoutineThumbnailsRow: View {
                     if index < products.count {
                         productThumbnail(products[index])
                     } else {
-                        plusPlaceholder
+                        emptyCirclePlaceholder
                     }
                 }
                 .zIndex(Double(3 - 1 - index))
@@ -53,21 +52,16 @@ struct RoutineThumbnailsRow: View {
         }
     }
 
-    private var plusPlaceholder: some View {
-        ZStack {
-            Circle()
-                .fill(Color.white)
-                .frame(width: Self.size, height: Self.size)
-                .shadow(color: Self.shadowColor, radius: 10, x: 0, y: 6)
-                .shadow(color: Color.black.opacity(0.18), radius: 4, x: 0, y: 3)
-                .overlay(
-                    Circle()
-                        .stroke(Color.black.opacity(0.06), lineWidth: 1)
-                )
-            Image(systemName: "plus")
-                .font(.system(size: 16, weight: .medium))
-                .foregroundColor(Self.plusColor)
-        }
+    private var emptyCirclePlaceholder: some View {
+        Circle()
+            .fill(Color.white)
+            .frame(width: Self.size, height: Self.size)
+            .overlay(
+                Circle()
+                    .stroke(Color.black.opacity(0.06), lineWidth: 1)
+            )
+            .shadow(color: Self.shadowColor, radius: 10, x: 0, y: 6)
+            .shadow(color: Color.black.opacity(0.18), radius: 4, x: 0, y: 3)
     }
 
 }

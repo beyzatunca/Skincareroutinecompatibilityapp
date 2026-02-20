@@ -5,6 +5,8 @@ struct AddToRoutineSheetView: View {
     let product: Product?
     let onConfirm: (RoutineSelection) -> Void
     let onCancel: () -> Void
+    /// Optional prefilled recommendation (e.g. from Product Compatibility result).
+    var initialSelection: RoutineSelection? = nil
 
     @State private var selection: RoutineSelection = .default
 
@@ -25,6 +27,11 @@ struct AddToRoutineSheetView: View {
             .padding(.bottom, Design.space32)
         }
         .background(Color.white)
+        .onAppear {
+            if let initial = initialSelection {
+                selection = initial
+            }
+        }
     }
 
     private var titleSection: some View {

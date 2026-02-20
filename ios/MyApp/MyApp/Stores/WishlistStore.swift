@@ -17,6 +17,11 @@ final class WishlistStore: ObservableObject {
         items.contains { $0.id == product.id }
     }
 
+    /// Remove all wishlist items and persist. Used when user clears all data (e.g. from Profile).
+    func clearAll() {
+        items = []
+    }
+
     /// Add if not present, remove if present. Deduplicates by product.id.
     func toggle(_ product: Product) {
         if let index = items.firstIndex(where: { $0.id == product.id }) {

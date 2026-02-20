@@ -3,6 +3,11 @@ import SwiftUI
 struct ProductRow: View {
     let product: Product
     let onTap: () -> Void
+    /// When true, shows a trailing + button that calls onAddTap. Used on "Add Your Products" screen.
+    var showAddButton: Bool = false
+    var onAddTap: (() -> Void)?
+    /// When false, price badge (e.g. $) is hidden. Used on "Add Your Products" screen.
+    var showPriceBadge: Bool = true
 
     private var productThumbnail: some View {
         Group {
@@ -44,7 +49,18 @@ struct ProductRow: View {
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
 
-                PriceBadge(tier: product.priceTier)
+                if showPriceBadge {
+                    PriceBadge(tier: product.priceTier)
+                }
+
+                if showAddButton, let onAddTap = onAddTap {
+                    Button(action: onAddTap) {
+                        Image(systemName: "plus.circle.fill")
+                            .font(.system(size: 28))
+                            .foregroundColor(Color(hex: "059669"))
+                    }
+                    .buttonStyle(.plain)
+                }
             }
             .padding(Design.productsRowPadding)
             .background(Color.white)

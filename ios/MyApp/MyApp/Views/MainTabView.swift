@@ -9,32 +9,58 @@ struct MainTabView: View {
     @State private var homePath = NavigationPath()
     /// Path for Discover tab stack (ProductsView root).
     @State private var discoverPath = NavigationPath()
-    /// Hide tab bar when Product Detail (or other fullscreen) is pushed.
+    /// Hide tab bar when Product Detail (or other fullscreen) is pushed (Home/Profile).
     @State private var hideTabBar = false
 
+    /// Discover: hide tab bar whenever stack has pushed views. Home/Profile: use hideTabBar from view callbacks.
+    private var showTabBar: Bool {
+        if appState.selectedTab == .discover {
+            return discoverPath.isEmpty
+        }
+        return !hideTabBar
+    }
+
     var body: some View {
-        tabContent
-            .environmentObject(routineStore)
-            .environmentObject(appState)
-            .environmentObject(userProfileStore)
-            .environmentObject(wishlistStore)
-            .onChange(of: appState.requestPopHomeToRoot) { _, requested in
-                if requested {
-                    homePath = NavigationPath()
-                    appState.requestPopHomeToRoot = false
+        ZStack(alignment: .top) {
+            tabContent
+                .environmentObject(routineStore)
+                .environmentObject(appState)
+                .environmentObject(userProfileStore)
+                .environmentObject(wishlistStore)
+                .onChange(of: appState.requestPopHomeToRoot) { _, requested in
+                    if requested {
+                        homePath = NavigationPath()
+                        appState.requestPopHomeToRoot = false
+                    }
                 }
-            }
-            .onChange(of: appState.selectedTab) { _, newTab in
-                if newTab == .home {
-                    homePath = NavigationPath()
+                .onChange(of: appState.selectedTab) { _, newTab in
+                    if newTab == .home {
+                        homePath = NavigationPath()
+                    }
                 }
-            }
-            .safeAreaInset(edge: .bottom) {
-                if !hideTabBar {
-                    BottomTabBar(selectedTab: $appState.selectedTab)
-                        .zIndex(1)
+                .safeAreaInset(edge: .bottom, spacing: 0) {
+                    if showTabBar {
+                        BottomTabBar(selectedTab: $appState.selectedTab)
+                            .zIndex(1)
+                    } else {
+                        Color.clear
+                            .frame(height: 0)
+                    }
                 }
+
+            if let toast = appState.toast {
+                ToastBanner(toast: toast) {
+                    appState.toast = nil
+                }
+                .padding(.top, Design.space12)
+                .transition(.asymmetric(
+                    insertion: .move(edge: .top).combined(with: .opacity),
+                    removal: .move(edge: .top).combined(with: .opacity)
+                ))
+                .zIndex(100)
             }
+        }
+        .animation(.easeInOut(duration: 0.35), value: appState.toast != nil)
     }
 
     @ViewBuilder
@@ -64,8 +90,15 @@ struct MainTabView: View {
                                 RoutineView()
                             case .compatibility:
                                 CompatibilityView(path: $homePath)
+                                    .onAppear { hideTabBar = true }
                             case .compatibilityResults:
                                 CompatibilityResultsView(path: $homePath)
+                                    .onAppear { hideTabBar = true }
+                                    .onDisappear { hideTabBar = false }
+                            case .analyzingProductCompatibility(_):
+                                EmptyView()
+                            case .productCompatibility(_):
+                                EmptyView()
                             }
                         }
                 }
@@ -87,7 +120,23 @@ struct MainTabView: View {
                             ScanEntryRouterView(path: $discoverPath)
                         case .surveyFromProductDetail(let productId):
                             PersonalizedSurveyContainerView(path: $discoverPath, source: .fromProductDetail(productId: productId))
-                        case .survey, .products, .skincareCoach, .routine, .compatibility, .compatibilityResults:
+                        case .compatibility:
+                            CompatibilityView(path: $discoverPath)
+                                .onAppear { hideTabBar = true }
+                                .onDisappear { hideTabBar = false }
+                        case .compatibilityResults:
+                            CompatibilityResultsView(path: $discoverPath)
+                                .onAppear { hideTabBar = true }
+                                .onDisappear { hideTabBar = false }
+                        case .analyzingProductCompatibility(let productId):
+                            CompatibilityView(path: $discoverPath, productId: productId)
+                                .onAppear { hideTabBar = true }
+                                .onDisappear { hideTabBar = false }
+                        case .productCompatibility(let productId):
+                            ProductCompatibilityView(path: $discoverPath, productId: productId)
+                                .onAppear { hideTabBar = true }
+                                .onDisappear { hideTabBar = false }
+                        case .survey, .products, .skincareCoach, .routine:
                             EmptyView()
                         }
                     }

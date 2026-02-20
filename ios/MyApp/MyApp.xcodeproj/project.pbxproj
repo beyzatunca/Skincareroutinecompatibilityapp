@@ -18,6 +18,7 @@
 		B20000000000000000000036 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000021 /* MainTabView.swift */; };
 		B20000000000000000000037 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000023 /* HomeView.swift */; };
 		B20000000000000000000038 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000025 /* HomeHeaderView.swift */; };
+		B2000000000000000000010A /* CompatibilityScoreGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000010B /* CompatibilityScoreGaugeView.swift */; };
 		B20000000000000000000039 /* HomeActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000026 /* HomeActionButton.swift */; };
 		B2000000000000000000003A /* RoutineCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000027 /* RoutineCardView.swift */; };
 		B2000000000000000000003B /* LearnDiscoverCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000028 /* LearnDiscoverCarousel.swift */; };
@@ -104,6 +105,7 @@
 		B200000000000000000000FC /* UserProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000000FB /* UserProfileStore.swift */; };
 		B20000000000000000000104 /* CompatibilityResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000101 /* CompatibilityResultsView.swift */; };
 		B20000000000000000000105 /* CompatibilityResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000103 /* CompatibilityResultsViewModel.swift */; };
+		B2000000000000000000010C /* ProductCompatibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000010D /* ProductCompatibilityView.swift */; };
 		B20000000000000000000108 /* WishlistStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000106 /* WishlistStore.swift */; };
 		B20000000000000000000109 /* AmazonLinkOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000107 /* AmazonLinkOpener.swift */; };
 /* End PBXBuildFile section */
@@ -121,6 +123,7 @@
 		B20000000000000000000021 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		B20000000000000000000023 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B20000000000000000000025 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		B2000000000000000000010B /* CompatibilityScoreGaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompatibilityScoreGaugeView.swift; sourceTree = "<group>"; };
 		B20000000000000000000026 /* HomeActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeActionButton.swift; sourceTree = "<group>"; };
 		B20000000000000000000027 /* RoutineCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineCardView.swift; sourceTree = "<group>"; };
 		B20000000000000000000028 /* LearnDiscoverCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnDiscoverCarousel.swift; sourceTree = "<group>"; };
@@ -208,6 +211,7 @@
 		B200000000000000000000FF /* NegativeEffectsPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegativeEffectsPanel.swift; sourceTree = "<group>"; };
 		B20000000000000000000101 /* CompatibilityResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompatibilityResultsView.swift; sourceTree = "<group>"; };
 		B20000000000000000000103 /* CompatibilityResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompatibilityResultsViewModel.swift; sourceTree = "<group>"; };
+		B2000000000000000000010D /* ProductCompatibilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCompatibilityView.swift; sourceTree = "<group>"; };
 		B20000000000000000000106 /* WishlistStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistStore.swift; sourceTree = "<group>"; };
 		B20000000000000000000107 /* AmazonLinkOpener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonLinkOpener.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -315,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				B20000000000000000000025 /* HomeHeaderView.swift */,
+				B2000000000000000000010B /* CompatibilityScoreGaugeView.swift */,
 				B20000000000000000000026 /* HomeActionButton.swift */,
 				B20000000000000000000027 /* RoutineCardView.swift */,
 				B20000000000000000000028 /* LearnDiscoverCarousel.swift */,
@@ -540,6 +545,7 @@
 			isa = PBXGroup;
 			children = (
 				B20000000000000000000101 /* CompatibilityResultsView.swift */,
+				B2000000000000000000010D /* ProductCompatibilityView.swift */,
 			);
 			path = Analysis;
 			sourceTree = "<group>";
@@ -625,6 +631,7 @@
 				B20000000000000000000036 /* MainTabView.swift in Sources */,
 				B20000000000000000000037 /* HomeView.swift in Sources */,
 				B20000000000000000000038 /* HomeHeaderView.swift in Sources */,
+				B2000000000000000000010A /* CompatibilityScoreGaugeView.swift in Sources */,
 				B20000000000000000000039 /* HomeActionButton.swift in Sources */,
 				B2000000000000000000003A /* RoutineCardView.swift in Sources */,
 				B2000000000000000000003B /* LearnDiscoverCarousel.swift in Sources */,
@@ -711,6 +718,7 @@
 				B200000000000000000000FA /* YourProfileSummaryCard.swift in Sources */,
 				B20000000000000000000104 /* CompatibilityResultsView.swift in Sources */,
 				B20000000000000000000105 /* CompatibilityResultsViewModel.swift in Sources */,
+				B2000000000000000000010C /* ProductCompatibilityView.swift in Sources */,
 				B20000000000000000000108 /* WishlistStore.swift in Sources */,
 				B20000000000000000000109 /* AmazonLinkOpener.swift in Sources */,
 			);

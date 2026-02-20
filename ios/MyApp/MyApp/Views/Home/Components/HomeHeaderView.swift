@@ -3,6 +3,9 @@ import SwiftUI
 struct HomeHeaderView: View {
     var onAddProducts: () -> Void
     var onCheckCompatibility: () -> Void
+    /// When true, shows compatibility score gauge (semi-circle) between title and buttons.
+    var showCompatibilityGauge: Bool = false
+    var compatibilityScore: Int = 74
 
     var body: some View {
         ZStack {
@@ -10,9 +13,14 @@ struct HomeHeaderView: View {
             VStack(spacing: 0) {
                 titleSection
                     .padding(.top, Design.space48)
-                    .padding(.bottom, Design.space32)
-                actionButtons
-                    .padding(.horizontal, Design.contentHorizontalPadding)
+                    .padding(.bottom, showCompatibilityGauge ? Design.space16 : Design.space32)
+                if showCompatibilityGauge {
+                    CompatibilityScoreGaugeView(score: compatibilityScore)
+                        .padding(.bottom, Design.space16)
+                } else {
+                    actionButtons
+                        .padding(.horizontal, Design.contentHorizontalPadding)
+                }
             }
             .frame(maxWidth: .infinity)
         }
@@ -68,7 +76,7 @@ struct HomeHeaderView: View {
                 .font(.system(size: Design.headerTitleFontSize, weight: .bold))
                 .lineSpacing(2)
                 .foregroundColor(Color(hex: "111827"))
-            Text("Build your personalized skincare journey")
+            Text("Add the products you're currently using")
                 .font(.system(size: Design.headerSubtitleFontSize))
                 .foregroundColor(Color(hex: "374151"))
         }
@@ -90,7 +98,17 @@ struct HomeHeaderView: View {
     }
 }
 
-#Preview {
+#Preview("With gauge") {
+    HomeHeaderView(
+        onAddProducts: {},
+        onCheckCompatibility: {},
+        showCompatibilityGauge: true,
+        compatibilityScore: 74
+    )
+    .frame(height: 420)
+}
+
+#Preview("No gauge") {
     HomeHeaderView(
         onAddProducts: {},
         onCheckCompatibility: {}

@@ -1,9 +1,10 @@
 import SwiftUI
 
-/// "Routine Analysis" loading screen: spinner, "Analyzing Your Routine", three step cards. On completion navigates to compatibility results.
+/// "Routine Analysis" loading screen: spinner, "Analyzing Your Routine", three step cards. On completion navigates to compatibility results or product compatibility (when productId is set).
 struct CompatibilityView: View {
     @Binding var path: NavigationPath
-    @Environment(\.dismiss) private var dismiss
+    /// When set (from Discover Product Detail), on completion navigate to Product Compatibility instead of full Compatibility Results.
+    var productId: String? = nil
 
     /// Step state for the three analysis steps.
     enum StepState {
@@ -38,12 +39,7 @@ struct CompatibilityView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItem(placement: .cancellationAction) {
-                Button("Close") { dismiss() }
-                    .foregroundColor(Color(hex: "374151"))
-            }
-        }
+        .navigationBarBackButtonHidden(true)
         .onAppear(perform: startStepProgression)
     }
 
@@ -56,7 +52,12 @@ struct CompatibilityView: View {
             step3 = .completed
             guard !hasNavigatedToResults else { return }
             hasNavigatedToResults = true
-            path.append(AppRoute.compatibilityResults)
+            if let productId = productId {
+                path.removeLast()
+                path.append(AppRoute.productCompatibility(productId: productId))
+            } else {
+                path.append(AppRoute.compatibilityResults)
+            }
         }
     }
 

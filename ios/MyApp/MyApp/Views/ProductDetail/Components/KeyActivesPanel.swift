@@ -1,6 +1,18 @@
 import SwiftUI
 
 struct KeyActivesPanel: View {
+    var product: Product?
+    @State private var showFullIngredients = false
+
+    private var keyActives: [String] {
+        product?.tags.prefix(4).map { $0 } ?? []
+    }
+
+    private var fullIngredientList: [String] {
+        if let list = product?.ingredients, !list.isEmpty { return list }
+        return product?.tags ?? []
+    }
+
     var body: some View {
         DetailPanelCard {
             VStack(alignment: .leading, spacing: Design.space12) {
@@ -8,23 +20,62 @@ struct KeyActivesPanel: View {
                     .font(.system(size: Design.sectionTitleFontSize, weight: .semibold))
                     .foregroundColor(Color(hex: "111827"))
 
-                HStack(spacing: Design.space8) {
-                    KeyActivePill(text: "Avobenzone")
-                    KeyActivePill(text: "Chemical UV filters")
+                if !keyActives.isEmpty {
+                    FlowLayout(spacing: Design.space8) {
+                        ForEach(keyActives, id: \.self) { text in
+                            KeyActivePill(text: text)
+                        }
+                    }
+                } else {
+                    Text("Key actives information")
+                        .font(.system(size: Design.surveySubtextFontSize))
+                        .foregroundColor(Color(hex: "6B7280"))
                 }
 
-                Text("Lightweight sunscreen for daily protection")
-                    .font(.system(size: Design.surveyBodyFontSize))
-                    .foregroundColor(Color(hex: "374151"))
+                if let product = product {
+                    Text(ingredientDescription(for: product))
+                        .font(.system(size: Design.surveyBodyFontSize))
+                        .foregroundColor(Color(hex: "374151"))
 
-                Button(action: {}) {
-                    Text("See full list of ingredients")
-                        .font(.system(size: Design.surveyBodyFontSize, weight: .medium))
-                        .foregroundColor(Color(hex: "2563EB"))
+                    Button {
+                        withAnimation(.easeInOut(duration: 0.2)) {
+                            showFullIngredients.toggle()
+                        }
+                    } label: {
+                        Text(showFullIngredients ? "Hide full list" : "See full list of ingredients")
+                            .font(.system(size: Design.surveyBodyFontSize, weight: .medium))
+                            .foregroundColor(Color(hex: "2563EB"))
+                    }
+                    .buttonStyle(.plain)
+
+                    if showFullIngredients, !fullIngredientList.isEmpty {
+                        VStack(alignment: .leading, spacing: Design.space8) {
+                            Text("Full ingredient list")
+                                .font(.system(size: Design.surveySubtextFontSize, weight: .semibold))
+                                .foregroundColor(Color(hex: "374151"))
+                            Text(fullIngredientList.joined(separator: ", "))
+                                .font(.system(size: Design.surveySubtextFontSize))
+                                .foregroundColor(Color(hex: "6B7280"))
+                                .fixedSize(horizontal: false, vertical: true)
+                        }
+                        .padding(.top, Design.space4)
+                    }
                 }
-                .buttonStyle(.plain)
             }
         }
+    }
+
+    private func ingredientDescription(for product: Product) -> String {
+        if product.category == .sunscreen {
+            return "Broad-spectrum sunscreen for daily protection."
+        }
+        if product.tags.contains(where: { $0.lowercased().contains("retinol") }) {
+            return "Supports skin renewal and texture."
+        }
+        if product.tags.contains(where: { $0.lowercased().contains("vitamin c") }) {
+            return "Antioxidant protection and brightening."
+        }
+        return "Formulated to support your skin goals."
     }
 }
 
@@ -45,6 +96,6 @@ private struct KeyActivePill: View {
 }
 
 #Preview {
-    KeyActivesPanel()
+    KeyActivesPanel(product: nil)
         .padding()
 }

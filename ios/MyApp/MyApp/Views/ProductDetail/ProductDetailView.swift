@@ -60,6 +60,30 @@ struct ProductDetailView: View {
         }
     }
 
+    private var benefitForYourSkinCard: some View {
+        DetailPanelCard {
+            VStack(alignment: .leading, spacing: Design.space12) {
+                Text("Benefit for your skin")
+                    .font(.system(size: Design.sectionTitleFontSize, weight: .semibold))
+                    .foregroundColor(Color(hex: "111827"))
+                VStack(alignment: .leading, spacing: Design.space8) {
+                    ForEach(viewModel.placeholderBenefits, id: \.self) { benefit in
+                        HStack(alignment: .top, spacing: Design.space8) {
+                            Circle()
+                                .fill(Color(hex: "0D9488"))
+                                .frame(width: 6, height: 6)
+                                .padding(.top, 6)
+                            Text(benefit)
+                                .font(.system(size: Design.surveyBodyFontSize))
+                                .foregroundColor(Color(hex: "374151"))
+                                .fixedSize(horizontal: false, vertical: true)
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     private var topBar: some View {
         HStack {
             Button(action: { dismiss() }) {
@@ -108,28 +132,13 @@ struct ProductDetailView: View {
 
             if isPersonalized {
                 if viewModel.showMatchCard {
-                    MatchCard(
-                        title: "Perfect Match for Your Concerns",
-                        subtitle: viewModel.skinTypeText,
-                        bullets: viewModel.matchBullets
-                    )
-                    .padding(.horizontal, Design.contentHorizontalPadding)
+                    PerfectMatchChip()
+                        .padding(.horizontal, Design.contentHorizontalPadding)
+                    MatchDescriptionBox(bullets: viewModel.matchBullets)
+                        .padding(.horizontal, Design.contentHorizontalPadding)
+                    benefitForYourSkinCard
+                        .padding(.horizontal, Design.contentHorizontalPadding)
                 }
-                ProductDetailSectionHeader(title: viewModel.benefitsSectionTitle)
-                    .padding(.horizontal, Design.contentHorizontalPadding)
-                VStack(alignment: .leading, spacing: Design.space8) {
-                    ForEach(viewModel.placeholderBenefits, id: \.self) { benefit in
-                        HStack(alignment: .top, spacing: Design.space8) {
-                            Text("•")
-                                .font(.system(size: Design.surveyBodyFontSize))
-                                .foregroundColor(Color(hex: "6B7280"))
-                            Text(benefit)
-                                .font(.system(size: Design.surveyBodyFontSize))
-                                .foregroundColor(Color(hex: "374151"))
-                        }
-                    }
-                }
-                .padding(.horizontal, Design.contentHorizontalPadding)
             } else {
                 GetPersonalizedResultsCard {
                     path.append(AppRoute.surveyFromProductDetail(productId: productId))
@@ -143,17 +152,17 @@ struct ProductDetailView: View {
                     .padding(.horizontal, Design.contentHorizontalPadding)
             }
 
-            KeyActivesPanel()
+            HowToUsePanel()
                 .padding(.horizontal, Design.contentHorizontalPadding)
 
-            HowToUsePanel()
+            KeyActivesPanel(product: viewModel.product)
                 .padding(.horizontal, Design.contentHorizontalPadding)
 
             RecommendedFrequencyPanel()
                 .padding(.horizontal, Design.contentHorizontalPadding)
 
             if isPersonalized {
-                RoutinePlacementPanel()
+                RoutinePlacementPanel(product: viewModel.product)
                     .padding(.horizontal, Design.contentHorizontalPadding)
             }
             Spacer().frame(height: 160)
@@ -188,9 +197,16 @@ struct ProductDetailView: View {
                         wishlistStore.toggle(product)
                         appState.showToast(
                             type: .success,
-                            message: wishlistStore.isWishlisted(product) ? "Added to wishlist" : "Removed from wishlist"
+                            message: wishlistStore.isWishlisted(product) ? "Added wishlist" : "Removed wishlist"
                         )
-                    }
+                    },
+                    onCheckCompatibility: source == .discover ? {
+                        if !routineStore.hasAnyProducts {
+                            appState.showToast(type: .error, message: "Please add products first")
+                            return
+                        }
+                        path.append(AppRoute.analyzingProductCompatibility(productId: productId))
+                    } : nil
                 )
                 .padding(.bottom, Self.floatingFooterBottomPadding)
                 .zIndex(100)
