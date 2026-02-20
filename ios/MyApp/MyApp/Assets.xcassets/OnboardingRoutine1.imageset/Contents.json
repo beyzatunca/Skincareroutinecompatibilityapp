@@ -4,6 +4,14 @@
       "filename" : "e9017d8198e203c3f3c075469c99955ae87448ea.png",
       "idiom" : "universal",
       "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {

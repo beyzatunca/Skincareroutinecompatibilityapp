@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "AppIcon.png",
       "idiom" : "universal",
       "platform" : "ios"
     }
